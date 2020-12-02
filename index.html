@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>   
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Wibla</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/wibla.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <header> 
+      <div class="side-nav fixed bg-white" id="slide-out">
+        <ul class="custom-scrollbar">
+          <li class="border-bottom d-flex container pb-4">   <a class="pl-0 pl-3 pt-1" href="/"></a><a class="button-collapse ml-auto p-3 pt-0" href="" id="closed"><span class="icon-closed font25-px-m"></span></a></li>
+          <li>   
+            <ul class="collapsible collapsible-accordion col-8 mx-auto mt-5">
+              <li> <a class="collapsible-header waves-effect" href="c_dai.html">Cotización DAI</a></li>
+              <li> <a class="collapsible-header waves-effect" href="c_btc.html">
+                   Cotización BTC</a></li>
+              <li> <a class="collapsible-header waves-effect" href="blog"> Blog</a></li>
+              <li> <a class="collapsible-header waves-effect" href="https://pro.buenbit.com/"> Empresas</a></li>
+              <li> <a class="collapsible-header waves-effect" href="http://ayuda.buenbit.com/"> Ayuda</a></li>
+            </ul>
+          </li>
+          <li>   
+            <div class="d-block col-10 mx-auto mt-5">
+              <button class="btn btn-primary btn-rounded col-12" onClick="window.location='https://app.buenbit.com/registro';">Registrase</button>
+              <button class="btn btn-outline-primary btn-rounded col-12" onClick="window.location='https://app.buenbit.com/';">Inciar sesión        </button>
+            </div>
+          </li>
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+      </div>
+      <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav bg-white">
+        <div class="container">
+          <div class="col-md-2 col-6 pb-2"><a href="/"><img src="image/logo_wibla_header.svg" alt=""/></a></div>
+          <div class="d-flex change-mode col-md-10 col-6 align-items-center" style="position: static;">
+            <div class="d-flex d-md-none ml-auto"><a class="button-collapse" href="" data-activates="slide-out"><span class="icon-bar bar"></span></a></div>
+            <ul class="nav navbar-nav nav-flex-icons d-md-flex d-none">
+              <li class="nav-item dropdown notifications-nav"><a class="nav-link align-items-center d-flex" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"><span class="d-none d-md-inline-block">Cámaras</span><i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-2"></div>
+                      <div class="col-md-2 pl-4"><a class="dropdown-item text-left" href="#">Cannon EOS R6 </a><a class="dropdown-item text-left" href="#">Cannon EOS R10 </a></div>
+                      <div class="col-md-2"><a class="dropdown-item text-left" href="#">Cannon EOS R6 </a><a class="dropdown-item text-left" href="#">Cannon EOS R10 </a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"><span class="clearfix d-none d-sm-inline-block">Lentes</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><span class="clearfix d-none d-sm-inline-block">Proyectores</span></a></li>
+              <li class="nav-item dropdown notifications-nav"><a class="nav-link align-items-center d-flex" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"><span class="d-none d-md-inline-block">Empresas</span><i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-6" style="padding-left: 4.8rem;"><a class="dropdown-item text-left" href="#">Empresa 1</a><a class="dropdown-item text-left" href="#">Empresa 2</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto align-items-center d-md-flex d-none">
+              <li class="nav-item"><a class="nav-link text nav-link-primary" href="#"><span class="clearfix d-none d-sm-inline-block lupa-border"><i class="fas fa-search"></i></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <main style="padding-top: 4.5rem; he ">
+        <section class="bg-section-home">
+          <div class="container position-absolute-md absulute-center py-section-home d-md-flex d-block pt-5 px-md-5 position-absolute center-image-absolute" style="z-index: 99;">
+            <div class="col-md-5 col-12 mt-container-home mt-4">
+              <div>
+                <h1 class="font-weight-bold montserrat text-md-left text-primary font43-px">El marketplace <br> para profesionales <br> audiovisuales</h1>
+                <p class="font-weight-500 inline15-rem mt-md-4 text-md-left font18-px">Lorem ipsum dolor sit amet, consectetuer <br> adipiscing elit, sed diam nonummy nibh <br> euismod tincidunt.</p>
+              </div>
+              <div class="d-md-none d-block"></div>
+              <div class="pt-3"><a class="btn btn-outline-primary btn-rounded d-block ml-md-0 col-md-4 col-6 font-weight-bold" href="">Comprar ahora!</a></div>
+            </div>
+            <div class="col-md-7 col-12 mt-container-home d-none d-md-block"></div>
+          </div>
+          <div class="owl-carousel owl-home d-none d-md-block">
+            <embed class="mx-auto d-block" src="image/fondo_header.png"/>
+            <embed class="mx-auto d-block" src="image/fondo_header.png"/>
+            <embed class="mx-auto d-block" src="image/fondo_header.png"/>
+          </div>
+          <div class="owl-carousel owl-home d-block d-md-none">
+            <embed class="mx-auto d-block" src="image/fondo_header-m.png" style="width:100%"/>
+            <embed class="mx-auto d-block" src="image/fondo_header-m.png" style="width:100%"/>
+            <embed class="mx-auto d-block" src="image/fondo_header-m.png" style="width:100%"/>
+          </div>
+        </section>
+        <section class="pt-md-5 containt-layout mb-md-5 pb-md-5">
+          <h2 class="text-center font53-px mt-md-3 my-5">Conoce todos nuestros productos</h2>
+          <div class="container px-md-auto mx-md-auto mx-0 px-0 mt-md-5 d-md-flex">
+            <div class="card bg-secondary col-md-3 pl-md-5 pt-md-5 pb-md-4 py-4 pl-4 card-rounde-left">
+              <embed class="mr-auto" src="image/icono-camara.svg" type=""/>
+              <h4 class="text-white mt-md-3 mt-4 font38-px">Cámaras</h4>
+              <div class="raya py-1-raya bg-white rounded col-md-3 my-md-3 d-md-block d-none"></div>
+              <p class="text-white">Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.</p>
+              <button class="btn btn-outline-white btn-rounded col-md-5 col-4 btn-sm px-md-0 py-md-2 mt-md-3">Ver todo</button>
+            </div>
+            <div class="col-md-12 d-md-flex owl-carousel owl-product-1 pt-md-4 px-0 mx-0 pt-4 pb-5 bg-slider">
+              <div><img class="img-product" src="image/foto-1.svg" alt="" srcset=""/>
+                <div class="px-5">
+                  <p class="mb-0 mt-2">Cámara mirrorless</p>
+                  <h5>Cannon EOS R6</h5>
+                </div>
+              </div>
+              <div><img class="img-product" src="image/foto-2.svg" alt="" srcset=""/>
+                <div class="px-5">
+                  <p class="mb-0 mt-2">Cámara mirrorless</p>
+                  <h5>Cannon EOS R6</h5>
+                </div>
+              </div>
+              <div><img class="img-product" src="image/foto-3.svg" alt="" srcset=""/>
+                <div class="px-5">
+                  <p class="mb-0 mt-2">Cámara mirrorless</p>
+                  <h5>Cannon EOS R6</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container px-md-auto mx-md-auto mx-0 px-0 mt-md-5 d-md-flex">
+            <div class="card bg-primary col-md-3 pl-md-5 pt-md-5 pb-md-4 py-4 pl-4 card-rounde-left">
+              <embed class="mr-auto" src="image/icono-lentes.svg" type=""/>
+              <h4 class="text-white mt-md-3 font38-px">Lentes</h4>
+              <div class="raya py-1-raya bg-white rounded col-md-3 my-md-3 d-md-block d-none"></div>
+              <p class="text-white">Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.</p>
+              <button class="btn btn-outline-white btn-rounded col-md-5 col-4 btn-sm px-md-0 py-md-2 mt-md-3">Ver todo</button>
+            </div>
+            <div class="col-md-12 d-md-flex owl-carousel owl-product-1 pt-md-4 px-0 mx-0 pt-4 pb-5 bg-slider">
+              <div><img class="img-product" src="image/foto-4.svg" alt="" srcset=""/>
+                <div class="px-5">
+                  <p class="mb-0 mt-2">Cámara mirrorless</p>
+                  <h5>Cannon EOS R6</h5>
+                </div>
+              </div>
+              <div><img class="img-product" src="image/foto-5.svg" alt="" srcset=""/>
+                <div class="px-5">
+                  <p class="mb-0 mt-2">Cámara mirrorless</p>
+                  <h5>Cannon EOS R6</h5>
+                </div>
+              </div>
+              <div><img class="img-product" src="image/foto-6.svg" alt="" srcset=""/>
+                <div class="px-5">
+                  <p class="mb-0 mt-2">Cámara mirrorless</p>
+                  <h5>Cannon EOS R6</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container px-md-auto mx-md-auto mx-0 px-0 mt-md-5 d-md-flex">
+            <div class="card bg-warning col-md-3 pl-md-5 pt-md-5 pb-md-4 py-4 pl-4 card-rounde-left">
+              <embed class="mr-auto" src="image/icono-proyector.svg" type=""/>
+              <h4 class="text-white mt-md-3 font38-px">Proyectores</h4>
+              <div class="raya py-1-raya bg-white rounded col-md-3 my-md-3 d-md-block d-none"></div>
+              <p class="text-white">Lorem ipsum dolor sit amet, consecte tuer adipiscing elit.</p>
+              <button class="btn btn-outline-white btn-rounded col-md-5 col-4 btn-sm px-md-0 py-md-2 mt-md-3">Ver todo</button>
+            </div>
+            <div class="col-md-12 d-md-flex owl-carousel owl-product-1 pt-md-4 px-0 mx-0 pt-4 pb-5 bg-slider">
+              <div><img class="img-product" src="image/foto-7.svg" alt="" srcset=""/>
+                <div class="px-5">
+                  <p class="mb-0 mt-2">Cámara mirrorless</p>
+                  <h5>Cannon EOS R6</h5>
+                </div>
+              </div>
+              <div><img class="img-product" src="image/foto-8.svg" alt="" srcset=""/>
+                <div class="px-5">
+                  <p class="mb-0 mt-2">Cámara mirrorless</p>
+                  <h5>Cannon EOS R6</h5>
+                </div>
+              </div>
+              <div><img class="img-product" src="image/foto-9.svg" alt="" srcset=""/>
+                <div class="px-5">
+                  <p class="mb-0 mt-2">Cámara mirrorless</p>
+                  <h5>Cannon EOS R6</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pt-md-5 bg-section-home">
+          <h2 class="text-center font49-px text-secondary position-absolute center-image-absolute mt-text-garantia font-weight-bold">Garantías 100% oficiales!</h2>
+          <embed class="mx-auto d-md-block d-none container" src="image/fondo-garantia.svg" type="" style="width: 100%;"/>
+          <embed class="mx-auto d-block d-md-none" src="image/fondo-garantia-m.svg" type="" style="width: 100%;"/>
+        </section>
+        <section class="pt-md-5 py-5">
+          <h2 class="text-center font72-px text-primary">Ventajas <span class="font-weight-bold">wibla!<span></h2>
+          <div class="container mt-md-5 my-5 my-md-0 pt-4 d-flex justify-content-md-center pb-md-5 mx-auto pt-md-5 overflow-x-auto scroll-count">
+            <div class="col-md-3 col-9"><img class="mr-md-auto iconos-ventajas" src="image/icono-reloj.svg" alt="" srcset=""/>
+              <div class="mt-4">
+                <h3 class="font35-px text-primary">Rápido!</h3>
+                <p class="font16-px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam adipis.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-9"><img class="mr-md-auto iconos-ventajas" src="image/icono-cartera.svg" alt="" srcset=""/>
+              <div class="mt-4">
+                <h3 class="font35-px text-primary">Ahorrás!</h3>
+                <p class="font16-px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam adipis.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-9"><img class="mr-md-auto iconos-ventajas" src="image/icono-telefono.svg" alt="" srcset=""/>
+              <div class="mt-4">
+                <h3 class="font35-px text-primary">Seguro!</h3>
+                <p class="font16-px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam adipis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="progress md-progress col-5 px-0 mx-auto d-md-none d-flex" style="height: .5rem !important;">
+            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </section>
+      </main>
+    </main>
+    <section class="mt-md-5 section-footer">
+      <div class="container position-absolute center-image-absolute pt-md-5 d-md-flex">
+        <div class="col-md-2 pt-5 pb-4 d-md-block d-flex"><img class="logo-footer" src="image/logo_wibla_footer.svg" alt="" srcset=""/>
+          <div class="mt-md-4 ml-auto d-block d-md-none"><a class="link-footer"><img class="icono-hover" src="image/facebook.png" data-name="facebook"/></a><a class="link-footer mx-3"><img class="icono-hover" src="image/linkedin.png" data-name="linkedin"/></a><a class="link-footer"><img class="icono-hover" src="image/instagram.png" data-name="instagram"/></a></div>
+        </div>
+        <div class="col-md-7 pt-md-5 row">
+          <div class="col-md-4 col-6">
+            <p class="text-white mb-2">Productos</p>
+            <div class="raya col-md-2 col-3 py-1-raya bg-white"></div>
+            <ul class="footer-list mt-md-4 mt-4">
+              <li><a href="#"><i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Cámara</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Lentes</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Proyectos</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-6">
+            <p class="text-white mb-2">Conocenos</p>
+            <div class="raya col-md-2 col-3 py-1-raya bg-white"></div>
+            <ul class="footer-list mt-md-4 mt-4">
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Nosotros</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Preguntas frecuentes</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Contacto</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 d-md-block d-none">
+            <p class="text-white">Siguenos</p>
+            <div class="raya col-md-2 col-1 py-1-raya bg-white"></div>
+            <div class="mt-md-4"><a class="link-footer"><img class="icono-hover" src="image/facebook.png" data-name="facebook"/></a><a class="link-footer mx-md-3"><img class="icono-hover" src="image/linkedin.png" data-name="linkedin"/></a><a class="link-footer"><img class="icono-hover" src="image/instagram.png" data-name="instagram"/></a></div>
+          </div>
+        </div>
+        <div class="col-md-3 pt-md-5 pt-4">
+          <p class="text-white mb-2">Newsletter
+            <div class="raya col-md-2 col-1 py-1-raya bg-white"></div>
+            <div class="mt-md-4">
+              <div class="md-form md-outline footer-input-pl mt-4">
+                <input class="form-control" id="form1" type="text"/>
+                <label for="form1">Example label</label>
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+      <embed class="d-md-block d-none" src="image/fondo-footer.svg" type=""/>
+      <embed class="d-md-none d-block" src="image/fondo-footer-m-1.svg" type="" style="width: 100%;"/>
+    </section>
+    <footer class="pt-0 bg-white">
+      <!-- Copyright-->
+      <div class="footer-copyright py-3 text-center">
+        <div class="row container mx-auto">
+          <div class="col-md-6 col-12 text-md-left text-center font12-px">2020 © Wibla. Todos los derechos reservados. </div>
+          <div class="col-md-6 col-12 text-md-right text-center font12-px"><a class="mr-3 text-primary font-weight-500" href="#"> 
+              <u>Terminos y Condiciones</u></a><a class="text-primary font-weight-500" href="#"> 
+              <u>Política de Privacidad</u></a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('.scroll-count').scroll(function(){
+              let scroll = $(this).scrollLeft();
+              let suma = scroll/12*5;
+              $('.progress-bar').css('width',suma+'px');
+          });
+          
+          $('.owl-home').owlCarousel({
+              loop:true,
+              margin:10,
+              responsiveClass:true,
+              autoplay:true,
+              autoplayTimeout:5000,
+              autoplayHoverPause:true,
+              items:1,
+              nav:false,
+              dots:false         
+          })
+          $('.owl-product-1').owlCarousel({
+              loop:true,
+              margin:0,
+              responsiveClass:true,
+              //- autoplay:true,
+              //- autoplayTimeout:5000,
+              //- autoplayHoverPause:true,
+              nav:false,
+              dots:false,
+              responsive:{
+                  0:{
+                      items:1
+                  },
+                  768:{
+                      items:3
+                  }
+              }         
+          })
+          
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+          // SideNav Button Initialization
+          $(".button-collapse").sideNav({
+              edge: 'right', // Choose the horizontal origin
+              closeOnClick: false, // Closes side-nav on &lt;a&gt; clicks, useful for Angular/Meteor
+              breakpoint: 5440, // Breakpoint for button collapse
+              menuWidth: 240, // Width for sidenav
+              timeDurationOpen: 500, // Time duration open menu
+              timeDurationClose: 500, // Time duration open menu
+              timeDurationOverlayOpen: 200, // Time duration open overlay
+              timeDurationOverlayClose: 200, // Time duration close overlay
+              easingOpen: 'easeInOutQuad', // Open animation
+              easingClose: 'easeInOutQuad', // Close animation
+          });
+          $('#closed').on('click', function(){
+              $('#sidenav-overlay').click();
+          });
+      });
+      $(document).ready(function(){
+          $(".link-footer").hover(
+              function() {
+                  $(this).find('.icono-hover').attr("src",'image/'+$(this).find('.icono-hover').data('name')+'-h.png');
+              },
+              function() {
+                  $(this).find('.icono-hover').attr("src",'image/'+$(this).find('.icono-hover').data('name')+'.png');
+              },
+          );
+      });
+    </script>
+  </body>
+</html>

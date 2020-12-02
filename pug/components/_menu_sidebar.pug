@@ -1,0 +1,28 @@
+#slide-out.side-nav.fixed.bg-white
+    ul.custom-scrollbar
+        li.border-bottom.d-flex.container.pb-4    
+            a.pl-0(href='/').pl-3.pt-1
+                //- img(src="image/logo_buenbit.svg", alt="")
+            a(href="" )#closed.button-collapse.ml-auto.p-3.pt-0
+                span.icon-closed.font25-px-m
+        li    
+            ul.collapsible.collapsible-accordion.col-8.mx-auto.mt-5
+                li  
+                    a(href="c_dai.html").collapsible-header.waves-effect
+                        |Cotización DAI
+                li 
+                    a(href="c_btc.html").collapsible-header.waves-effect  
+                        |Cotización BTC
+                li  
+                    a(href="blog").collapsible-header.waves-effect  Blog
+                li  
+                    a(href="https://pro.buenbit.com/").collapsible-header.waves-effect  Empresas
+                li  
+                    a(href="http://ayuda.buenbit.com/").collapsible-header.waves-effect  Ayuda
+                
+        li    
+            .d-block.col-10.mx-auto.mt-5
+                button(onClick="window.location='https://app.buenbit.com/registro';").btn.btn-primary.btn-rounded.col-12 Registrase
+                button(onClick="window.location='https://app.buenbit.com/';").btn.btn-outline-primary.btn-rounded.col-12 Inciar sesión        
+
+    .sidenav-bg.mask-strong

@@ -1,0 +1,52 @@
+nav.navbar.fixed-top.navbar-expand-lg.scrolling-navbar.double-nav.bg-white
+    .container
+        .col-md-2.col-6.pb-2
+            a(href="/")
+                img(src="image/logo_wibla_header.svg" alt="")
+        .d-flex.change-mode.col-md-10.col-6.align-items-center(style="position: static;")
+            .d-flex.d-md-none.ml-auto
+                a(href="" data-activates="slide-out").button-collapse
+                    span.icon-bar.bar
+            ul.nav.navbar-nav.nav-flex-icons.d-md-flex.d-none
+                li.nav-item.dropdown.notifications-nav
+                    a#navbarDropdownMenuLink.nav-link.align-items-center.d-flex(data-toggle='dropdown' aria-haspopup='true' )
+                        span.d-none.d-md-inline-block Cámaras
+                        i.fas.fa-chevron-down
+                    .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                        .container
+                            .row
+                                .col-md-2
+                                .col-md-2.pl-4
+                                    a.dropdown-item.text-left(href='#')
+                                        |Cannon EOS R6 
+                                    a.dropdown-item.text-left(href='#')
+                                        |Cannon EOS R10 
+                                .col-md-2
+                                    a.dropdown-item.text-left(href='#')
+                                        |Cannon EOS R6 
+                                    a.dropdown-item.text-left(href='#')
+                                        |Cannon EOS R10 
+                li.nav-item
+                    a.nav-link(href='#')
+                        span.clearfix.d-none.d-sm-inline-block Lentes
+                li.nav-item
+                    a.nav-link(href='#')
+                        span.clearfix.d-none.d-sm-inline-block Proyectores
+                li.nav-item.dropdown.notifications-nav
+                    a#navbarDropdownMenuLink.nav-link.align-items-center.d-flex(data-toggle='dropdown' aria-haspopup='true' )
+                        span.d-none.d-md-inline-block Empresas
+                        i.fas.fa-chevron-down
+                    .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                        .container
+                            .row
+                                .col-md-4
+                                .col-md-6(style="padding-left: 4.8rem;")
+                                    a.dropdown-item.text-left(href='#')
+                                        |Empresa 1
+                                    a.dropdown-item.text-left(href='#')
+                                        |Empresa 2
+            ul.nav.navbar-nav.nav-flex-icons.ml-auto.align-items-center.d-md-flex.d-none
+                li.nav-item
+                    a.nav-link.text.nav-link-primary(href="#")
+                        span.clearfix.d-none.d-sm-inline-block.lupa-border
+                            i.fas.fa-search
