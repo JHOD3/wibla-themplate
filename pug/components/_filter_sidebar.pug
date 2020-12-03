@@ -1,0 +1,82 @@
+#slide-out-filter.side-nav.fixed.bg-white
+    ul.custom-scrollbar
+        li.d-flex.container.pb-4    
+            a.pl-0(href='/').pl-3.pt-2
+                img(src="image/logo_wibla_header.svg", alt="")
+            a(href="" ).closed.button-collapse.ml-auto.p-3.pt-0
+                img(src="image/icono-x.svg", alt="", srcset="" style="width: 30px;")
+    #accordionEx194.accordion.md-accordion.accordion-3(role='tablist' aria-multiselectable='true')
+        .card
+            #heading4.card-header.border-0(role='tab')
+                a
+                    p.mb-0.mt-3.text-muted
+                        | Filtros
+        .card
+            #heading4.card-header.border-bottom.py-2(role='tab')
+                a(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse4' aria-expanded='true' aria-controls='collapse4')
+                    p.mb-0.mt-0.text-muted
+                        | Marca
+                        i.fas.fa-angle-down.rotate-icon.mt-3
+            #collapse4.collapse.show(role='tabpanel' aria-labelledby='heading4' data-parent='#accordionEx194')
+                .card-body.pt-0
+                    ul.mt-md-3  
+                        li
+                            a(href="#") Nikon (16)
+                        li
+                            a(href="#") Cannon (4)
+                        li
+                            a(href="#") Sony (8)
+        .card
+            #heading5.card-header.border-bottom.py-2(role='tab')
+                a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse5' aria-expanded='false' aria-controls='collapse5')
+                    p.mb-0.mt-0.text-muted
+                        | Modelo
+                        i.fas.fa-angle-down.rotate-icon.mt-3
+            #collapse5.collapse(role='tabpanel' aria-labelledby='heading5' data-parent='#accordionEx194')
+                .card-body.pt-0
+                    p
+                        ul.mt-md-3  
+                            li
+                                a(href="#") Digitales (16)
+                            li
+                                a(href="#") Bridge (4)
+                            li
+                                a(href="#") Reflex (8)
+        .card
+            #heading6.card-header.border-bottom.py-2(role='tab')
+                a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse6' aria-expanded='false' aria-controls='collapse6')
+                    p.mb-0.mt-0.text-muted
+                        | Rengo de precio 
+                        i.fas.fa-angle-down.rotate-icon.mt-3
+            #collapse6.collapse(role='tabpanel' aria-labelledby='heading6' data-parent='#accordionEx194')
+                .card-body.pt-0
+                    form.multi-range-field.my-5.pb-5
+                        input#multi6.multi-range.col-12(type='range')
+
+        .card
+            #heading6.card-header.border-bottom.py-2(role='tab')
+                a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse7' aria-expanded='false' aria-controls='collapse7')
+                    p.mb-0.mt-0.text-muted
+                        | Resolución 
+                        i.fas.fa-angle-down.rotate-icon.mt-3
+            #collapse7.collapse(role='tabpanel' aria-labelledby='heading6' data-parent='#accordionEx194')
+                .card-body.pt-0
+                    p
+                        ul.mt-md-3  
+                            li
+                                a(href="#") 1600x1200 (16)
+                            li
+                                a(href="#") 1600x1200 (4)
+                            li
+                                a(href="#") 1600x1200 (8)
+        .card
+            #heading6.card-header.border-bottom.py-2(role='tab')
+                a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse8' aria-expanded='false' aria-controls='collapse8')
+                    p.mb-0.mt-0.text-muted
+                        | Calificación 
+                        i.fas.fa-angle-down.rotate-icon.mt-3
+            #collapse8.collapse(role='tabpanel' aria-labelledby='heading6' data-parent='#accordionEx194')
+                .card-body.pt-0
+                    .container.mt-3
+                        span.rateMe1#rateMe2
+    .sidenav-bg.mask-strong

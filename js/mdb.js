@@ -16759,7 +16759,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 (function ($) {
   var MENU_WIDTH = 240;
-  var SN_BREAKPOINT = 1440;
+  var SN_BREAKPOINT = 50000;
   var MENU_WIDTH_HALF = 2;
   var MENU_LEFT_MIN_BORDER = 0.3;
   var MENU_LEFT_MAX_BORDER = -0.5;
@@ -18286,7 +18286,7 @@ function () {
     this.$materialSelectInitialOption = $nativeSelect.find('option:selected').text() || $nativeSelect.find('option:first').text() || '';
     this.$nativeSelectChildren = this.$nativeSelect.children('option, optgroup');
     this.$materialSelect = $("<input type=\"text\" class=\"".concat(this.options.defaultMaterialInput ? 'browser-default custom-select multi-bs-select select-dropdown form-control' : 'select-dropdown form-control', "\" ").concat(!this.options.validate && 'readonly="true"', " required=\"").concat(this.options.validate ? 'true' : 'false', "\" ").concat(this.$nativeSelect.is(' :disabled') ? 'disabled' : '', " data-activates=\"select-options-").concat(this.properties.id, "\" value=\"\"/>"));
-    this.$dropdownIcon = this.options.defaultMaterialInput ? '' : $('<span class="caret">&#9660;</span>');
+    this.$dropdownIcon = this.options.defaultMaterialInput ? '' : $('<span class="caret"><i class="fas fa-chevron-down"></i></span>');
     this.$searchInput = null;
     this.$noSearchResultsInfo = $("<li><span><i>".concat(this.options.labels.noSearchResults, "</i></span></li>"));
     this.$toggleAll = $("<li class=\"select-toggle-all\"><span><input type=\"checkbox\" class=\"form-check-input\"><label>".concat(this.options.labels.selectAll, "</label></span></li>"));

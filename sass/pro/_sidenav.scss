@@ -236,7 +236,7 @@
   &.fixed {
     position: fixed; // Right Align
     left: 0;
-    transform: translateX(0);
+    // transform: translateX(0);
 
     &.right-aligned {
       right: 0;

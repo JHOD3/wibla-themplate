@@ -302,18 +302,18 @@
 
     &:hover {
       color: set-notification-text-color($color);
-      background-color: lighten($color, 5%);
+      background-color: lighten($color, 5%) !important;
     }
 
     &:focus,
     &.focus {
-      box-shadow: $z-depth-1-half;
+      box-shadow: none;
     }
 
     &:focus,
     &:active,
     &.active {
-      background-color: darken($color, 20%);
+        background-color: lighten($color, 5%) !important;
     }
 
     &.dropdown-toggle {
@@ -328,8 +328,8 @@
     &:not([disabled]):not(.disabled):active,
     &:not([disabled]):not(.disabled).active,
     .show > &.dropdown-toggle {
-      background-color: darken($color, 20%) !important;
-      box-shadow: $z-depth-1-half;
+      background-color: lighten($color, 5%) !important;
+    //   box-shadow: $z-depth-1-half;
     }
 
     &:not([disabled]):not(.disabled):active:focus,
@@ -378,8 +378,13 @@
     &:active,
     &:active:focus,
     &.active {
-      color: $color !important;
-      background-color: transparent !important;
+        @if $name == 'white' {
+            color: rgb(0, 0, 0) !important;
+        }@else{
+            color: rgb(255, 255, 255) !important;
+        }
+      
+      background-color: $color !important;
       border-color: $color !important;
     }
 

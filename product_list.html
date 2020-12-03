@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>   
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Wibla</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/wibla.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/multi-range.min.css"/>
+    <link rel="stylesheet" href="css/rating.min.css"/>
+  </head>
+  <body>
+    <header> 
+      <div class="side-nav fixed bg-white" id="slide-out">
+        <ul class="custom-scrollbar">
+          <li class="d-flex container pb-4">   <a class="pl-0 pl-3 pt-2" href="/"><img src="image/logo_wibla_header.svg" alt=""/></a><a class="closed button-collapse ml-auto p-3 pt-0" href=""><img src="image/icono-x.svg" alt="" srcset="" style="width: 30px;"/></a></li>
+          <li>   
+            <ul class="collapsible collapsible-accordion col-8 mx-auto mt-5">
+              <li> <a class="collapsible-header waves-effect" href="c_dai.html"><i class="fas fa-chevron-right"></i>Cotización DAI</a></li>
+              <li> <a class="collapsible-header waves-effect" href="c_btc.html"><i class="fas fa-chevron-right"> </i>Cotización BTC</a></li>
+              <li> <a class="collapsible-header waves-effect" href="blog"> <i class="fas fa-chevron-right"></i>Blog</a></li>
+              <li> 
+                <div class="md-form md-outline mt-4 ml-3 mt-5 input-with-post-icon"><i class="fas fa-search input-prefix text-muted" style="position: absolute;right: 6px;font-size: 23px;top: 9px;"></i>
+                  <input class="form-control text-primary form-control-lg" id="form1" type="text"/>
+                  <label class="text-muted" for="form1">Buscar</label>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+      </div>
+      <div class="side-nav fixed bg-white" id="slide-out-filter">
+        <ul class="custom-scrollbar">
+          <li class="d-flex container pb-4">   <a class="pl-0 pl-3 pt-2" href="/"><img src="image/logo_wibla_header.svg" alt=""/></a><a class="closed button-collapse ml-auto p-3 pt-0" href=""><img src="image/icono-x.svg" alt="" srcset="" style="width: 30px;"/></a></li>
+        </ul>
+        <div class="accordion md-accordion accordion-3" id="accordionEx194" role="tablist" aria-multiselectable="true">
+          <div class="card">
+            <div class="card-header border-0" id="heading4" role="tab"><a>
+                <p class="mb-0 mt-3 text-muted">Filtros</p></a></div>
+          </div>
+          <div class="card">
+            <div class="card-header border-bottom py-2" id="heading4" role="tab"><a data-toggle="collapse" data-parent="#accordionEx194" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                <p class="mb-0 mt-0 text-muted">Marca<i class="fas fa-angle-down rotate-icon mt-3"></i></p></a></div>
+            <div class="collapse show" id="collapse4" role="tabpanel" aria-labelledby="heading4" data-parent="#accordionEx194">
+              <div class="card-body pt-0">
+                <ul class="mt-md-3"> 
+                  <li><a href="#">Nikon (16)</a></li>
+                  <li><a href="#">Cannon (4)</a></li>
+                  <li><a href="#">Sony (8)</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header border-bottom py-2" id="heading5" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                <p class="mb-0 mt-0 text-muted">Modelo<i class="fas fa-angle-down rotate-icon mt-3"></i></p></a></div>
+            <div class="collapse" id="collapse5" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx194">
+              <div class="card-body pt-0">
+                <p>
+                  <ul class="mt-md-3"> 
+                    <li><a href="#">Digitales (16)</a></li>
+                    <li><a href="#">Bridge (4)</a></li>
+                    <li><a href="#">Reflex (8)</a></li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header border-bottom py-2" id="heading6" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                <p class="mb-0 mt-0 text-muted">Rengo de precio <i class="fas fa-angle-down rotate-icon mt-3"></i></p></a></div>
+            <div class="collapse" id="collapse6" role="tabpanel" aria-labelledby="heading6" data-parent="#accordionEx194">
+              <div class="card-body pt-0">
+                <form class="multi-range-field my-5 pb-5">
+                  <input class="multi-range col-12" id="multi6" type="range"/>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header border-bottom py-2" id="heading6" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                <p class="mb-0 mt-0 text-muted">Resolución <i class="fas fa-angle-down rotate-icon mt-3"></i></p></a></div>
+            <div class="collapse" id="collapse7" role="tabpanel" aria-labelledby="heading6" data-parent="#accordionEx194">
+              <div class="card-body pt-0">
+                <p>
+                  <ul class="mt-md-3"> 
+                    <li><a href="#">1600x1200 (16)</a></li>
+                    <li><a href="#">1600x1200 (4)</a></li>
+                    <li><a href="#">1600x1200 (8)</a></li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header border-bottom py-2" id="heading6" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                <p class="mb-0 mt-0 text-muted">Calificación <i class="fas fa-angle-down rotate-icon mt-3"></i></p></a></div>
+            <div class="collapse" id="collapse8" role="tabpanel" aria-labelledby="heading6" data-parent="#accordionEx194">
+              <div class="card-body pt-0">
+                <div class="container mt-3"><span class="rateMe1" id="rateMe2"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidenav-bg mask-strong"></div>
+      </div>
+      <div class="side-nav fixed bg-white" id="slide-out-order">
+        <ul class="custom-scrollbar">
+          <li class="d-flex container pb-4">   <a class="pl-0 pl-3 pt-2" href="/"><img src="image/logo_wibla_header.svg" alt=""/></a><a class="closed button-collapse ml-auto p-3 pt-0" href=""><img src="image/icono-x.svg" alt="" srcset="" style="width: 30px;"/></a></li>
+          <li>   
+            <ul class="collapsible collapsible-accordion col-8 mx-auto mt-5">
+              <li> <a class="collapsible-header waves-effect" href="c_dai.html"><i class="fas fa-chevron-right"></i>Descatados</a></li>
+              <li> <a class="collapsible-header waves-effect" href="c_btc.html"><i class="fas fa-chevron-right"> </i>En Oferta</a></li>
+              <li> <a class="collapsible-header waves-effect" href="blog"> <i class="fas fa-chevron-right"></i>Nuevos </a></li>
+              <li> <a class="collapsible-header waves-effect" href="blog"> <i class="fas fa-chevron-right"></i>Order 1 </a></li>
+              <li> <a class="collapsible-header waves-effect" href="blog"> <i class="fas fa-chevron-right"></i>Order 2 </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="sidenav-bg mask-strong"> </div>
+      <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav bg-white">
+        <div class="container">
+          <div class="col-md-2 col-6 py-md-2 py-3"><a href="/"><img src="image/logo_wibla_header.svg" alt=""/></a></div>
+          <div class="d-flex change-mode col-md-10 col-6 align-items-center" style="position: static;">
+            <div class="d-flex d-md-none ml-auto"><a class="button-collapse" href="" data-activates="slide-out"><img src="image/icono-bar.svg" alt="" srcset="" style="width: 40px;"/></a></div>
+            <ul class="nav navbar-nav nav-flex-icons d-md-flex d-none">
+              <li class="nav-item dropdown notifications-nav"><a class="nav-link align-items-center d-flex" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"><span class="d-none d-md-inline-block">Cámaras</span><i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-2"></div>
+                      <div class="col-md-2 pl-4"><a class="dropdown-item text-left" href="#">Cannon EOS R6 </a><a class="dropdown-item text-left" href="#">Cannon EOS R10 </a></div>
+                      <div class="col-md-2"><a class="dropdown-item text-left" href="#">Cannon EOS R6 </a><a class="dropdown-item text-left" href="#">Cannon EOS R10 </a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"><span class="clearfix d-none d-sm-inline-block">Lentes</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><span class="clearfix d-none d-sm-inline-block">Proyectores</span></a></li>
+              <li class="nav-item dropdown notifications-nav"><a class="nav-link align-items-center d-flex" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"><span class="d-none d-md-inline-block">Empresas</span><i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-6" style="padding-left: 4.8rem;"><a class="dropdown-item text-left" href="#">Empresa 1</a><a class="dropdown-item text-left" href="#">Empresa 2</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto align-items-center d-md-flex d-none">
+              <li class="nav-item"><a class="nav-link text nav-link-primary" href="#"><span class="clearfix d-none d-sm-inline-block lupa-border"><i class="fas fa-search"></i></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <main style="padding-top: 4.5rem; he ">
+        <section class="bg-section-home">
+          <div class="container position-absolute-md absulute-center py-section-home d-md-flex d-block pt-5 px-md-5 position-absolute center-image-absolute" style="z-index: 99;">
+            <div class="col-md-5 col-12 mt-container-home mt-4">
+              <div>
+                <p class="font12-px mb-1 mb-md-2"> <a class="text-white" href="#">Categorías  /   </a><a class="text-white" href="#">Cámaras digitales   /   </a><a class="text-white" href="#">Cámaras mirrorless</a></p>
+                <h1 class="montserrat text-md-left text-white font43-px">Cámaras mirrorless</h1>
+              </div>
+            </div>
+            <div class="col-md-7 col-12 mt-container-home d-none d-md-block"></div>
+          </div>
+          <div class="owl-carousel owl-home d-none d-md-block">
+            <embed class="mx-auto d-block" src="image/header_product.png" style="width:100%"/>
+            <embed class="mx-auto d-block" src="image/header_product.png" style="width:100%"/>
+            <embed class="mx-auto d-block" src="image/header_product.png" style="width:100%"/>
+          </div>
+          <div class="owl-carousel owl-home d-block d-md-none">
+            <embed class="mx-auto d-block" src="image/header_product-m.png" style="width:100%"/>
+            <embed class="mx-auto d-block" src="image/header_product-m.png" style="width:100%"/>
+            <embed class="mx-auto d-block" src="image/header_product-m.png" style="width:100%"/>
+          </div>
+        </section>
+        <section class="pt-md-5 py-5 pb-md-0" style="background: #F6F6F6;">
+          <div class="container-fluid row mx-0">
+            <div class="col-9 d-md-none d-block d-flex mx-auto mb-4"><a class="button-collapse col-6 d-flex align-items-center" data-activates="slide-out-filter">
+                <p class="mb-0 mr-3">Filtro </p><img class="icono-filter-order" src="image/icono-filter.svg" alt="" srcset=""/></a><a class="button-collapse col-6 d-flex align-items-center" data-activates="slide-out-order">
+                <p class="mb-0 mr-3">Ordenar </p><img class="icono-filter-order" src="image/icono-ordenar.svg" alt="" srcset=""/></a></div>
+            <div class="col-md-12 d-md-block d-none">
+              <select class="mdb-select md-form col-2 ml-md-auto px-0">
+                <option value="" disabled="" selected="">Ordenar por</option>
+                <option value="1">Descatados</option>
+                <option value="2">En Oferta</option>
+                <option value="3">Nuevos</option>
+                <option value="3">Order 1</option>
+                <option value="3">Order 2</option>
+              </select>
+            </div>
+            <div class="col-md-3 filtros d-md-block d-none">
+              <div class="accordion md-accordion accordion-3" id="accordionEx194" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header border-bottom" id="heading4" role="tab"><a data-toggle="collapse" data-parent="#accordionEx194" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                      <p class="mb-0 mt-3 text-muted">Marca<i class="fas fa-angle-down rotate-icon"></i></p></a></div>
+                  <div class="collapse show" id="collapse4" role="tabpanel" aria-labelledby="heading4" data-parent="#accordionEx194">
+                    <div class="card-body pt-0">
+                      <ul class="mt-md-3"> 
+                        <li><a href="#">Nikon (16)</a></li>
+                        <li><a href="#">Cannon (4)</a></li>
+                        <li><a href="#">Sony (8)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header border-bottom" id="heading5" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                      <p class="mb-0 mt-3 text-muted">Modelo<i class="fas fa-angle-down rotate-icon"></i></p></a></div>
+                  <div class="collapse" id="collapse5" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx194">
+                    <div class="card-body pt-0">
+                      <p>
+                        <ul class="mt-md-3"> 
+                          <li><a href="#">Digitales (16)</a></li>
+                          <li><a href="#">Bridge (4)</a></li>
+                          <li><a href="#">Reflex (8)</a></li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header border-bottom" id="heading6" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                      <p class="mb-0 mt-3 text-muted">Rengo de precio <i class="fas fa-angle-down rotate-icon"></i></p></a></div>
+                  <div class="collapse" id="collapse6" role="tabpanel" aria-labelledby="heading6" data-parent="#accordionEx194">
+                    <div class="card-body pt-0">
+                      <form class="multi-range-field my-5 pb-5">
+                        <input class="multi-range col-12" id="multi6" type="range"/>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header border-bottom" id="heading6" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                      <p class="mb-0 mt-3 text-muted">Resolución <i class="fas fa-angle-down rotate-icon"></i></p></a></div>
+                  <div class="collapse" id="collapse7" role="tabpanel" aria-labelledby="heading6" data-parent="#accordionEx194">
+                    <div class="card-body pt-0">
+                      <p>
+                        <ul class="mt-md-3"> 
+                          <li><a href="#">1600x1200 (16)</a></li>
+                          <li><a href="#">1600x1200 (4)</a></li>
+                          <li><a href="#">1600x1200 (8)</a></li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header border-bottom" id="heading6" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                      <p class="mb-0 mt-3 text-muted">Calificación <i class="fas fa-angle-down rotate-icon"></i></p></a></div>
+                  <div class="collapse" id="collapse8" role="tabpanel" aria-labelledby="heading6" data-parent="#accordionEx194">
+                    <div class="card-body pt-0">
+                      <div class="container mt-3"><span class="rateMe1"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 mx-auto d-block">
+              <div class="card-product d-md-flex d-block py-4 mb-5 px-4 mx-md-0 mx-3 px-md-0" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-destacados d-md-block d-none"><i class="fas fa-star mr-2"></i>Destacado</div>
+                <div class="col-md-4">
+                  <div class="d-block d-md-none">
+                    <p class="mb-0 mt-2">Cámara mirrorless</p>
+                    <h5>Cannon EOS R6</h5>
+                  </div><img src="image/foto-2.svg" alt="" srcset=""/>
+                </div>
+                <div class="col-md-4 px-md-0 mt-md-0 mt-4">
+                  <h4 class="font22-px d-md-block d-none">Cannon Eos R6 Mirrorless</h4>
+                  <h6 class="font16-px">Digital Camera with NIKKOR Z <br> 24-70mm f/4 S Lens</h6>
+                  <div class="raya py-1-raya rounded elegant-color col-md-2 my-3 d-md-block d-none"></div>
+                  <div class="d-md-none d-block my-3"></div>
+                  <p class="font11-px d-md-block d-none">Model: Nikon Z6Sensor Size: Full Frame Camera FormatMax Video Quality: 4K 25fpsIn-Body Stabilization: 5-Axis</p>
+                </div>
+                <div class="col-md-4">
+                  <h2 class="text-md-center font-weight-400">129,95676</h2>
+                  <div>
+                    <button class="btn btn-secondary col-md-7 btn-md mx-md-auto d-md-block d-none position-absolute" style="bottom: 0px;left: 0px;right: 0px;">Quiero comprar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-product d-md-flex d-block py-4 mb-5 px-4 mx-md-0 mx-3 px-md-0" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-md-4">
+                  <div class="d-block d-md-none">
+                    <p class="mb-0 mt-2">Cámara mirrorless</p>
+                    <h5>Cannon EOS R6</h5>
+                  </div><img src="image/foto-2.svg" alt="" srcset=""/>
+                </div>
+                <div class="col-md-4 px-md-0 mt-md-0 mt-4">
+                  <h4 class="font22-px d-md-block d-none">Cannon Eos R6 Mirrorless</h4>
+                  <h6 class="font16-px">Digital Camera with NIKKOR Z <br> 24-70mm f/4 S Lens</h6>
+                  <div class="raya py-1-raya rounded elegant-color col-md-2 my-3 d-md-block d-none"></div>
+                  <div class="d-md-none d-block my-3"></div>
+                  <p class="font11-px d-md-block d-none">Model: Nikon Z6Sensor Size: Full Frame Camera FormatMax Video Quality: 4K 25fpsIn-Body Stabilization: 5-Axis</p>
+                </div>
+                <div class="col-md-4">
+                  <h2 class="text-md-center font-weight-400">129,95676</h2>
+                  <div>
+                    <button class="btn btn-secondary col-md-7 btn-md mx-md-auto d-md-block d-none position-absolute" style="bottom: 0px;left: 0px;right: 0px;">Quiero comprar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-product d-md-flex d-block py-4 mb-5 px-4 mx-md-0 mx-3 px-md-0" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-oferta d-md-block d-none"><i class="fas fa-fire mr-2"></i>Oferta</div>
+                <div class="col-md-4">
+                  <div class="d-block d-md-none">
+                    <p class="mb-0 mt-2">Cámara mirrorless</p>
+                    <h5>Cannon EOS R6</h5>
+                  </div><img src="image/foto-2.svg" alt="" srcset=""/>
+                </div>
+                <div class="col-md-4 px-md-0 mt-md-0 mt-4">
+                  <h4 class="font22-px d-md-block d-none">Cannon Eos R6 Mirrorless</h4>
+                  <h6 class="font16-px">Digital Camera with NIKKOR Z <br> 24-70mm f/4 S Lens</h6>
+                  <div class="raya py-1-raya rounded elegant-color col-md-2 my-3 d-md-block d-none"></div>
+                  <div class="d-md-none d-block my-3"></div>
+                  <p class="font11-px d-md-block d-none">Model: Nikon Z6Sensor Size: Full Frame Camera FormatMax Video Quality: 4K 25fpsIn-Body Stabilization: 5-Axis</p>
+                </div>
+                <div class="col-md-4">
+                  <h2 class="text-md-center font-weight-400">129,95676</h2>
+                  <div>
+                    <button class="btn btn-secondary col-md-7 btn-md mx-md-auto d-md-block d-none position-absolute" style="bottom: 0px;left: 0px;right: 0px;">Quiero comprar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-product d-md-flex d-block py-4 mb-5 px-4 mx-md-0 mx-3 px-md-0" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-nuevo d-md-block d-none"><i class="fas fa-heart mr-2"></i>¡Nuevo!</div>
+                <div class="col-md-4">
+                  <div class="d-block d-md-none">
+                    <p class="mb-0 mt-2">Cámara mirrorless</p>
+                    <h5>Cannon EOS R6</h5>
+                  </div><img src="image/foto-2.svg" alt="" srcset=""/>
+                </div>
+                <div class="col-md-4 px-md-0 mt-md-0 mt-4">
+                  <h4 class="font22-px d-md-block d-none">Cannon Eos R6 Mirrorless</h4>
+                  <h6 class="font16-px">Digital Camera with NIKKOR Z <br> 24-70mm f/4 S Lens</h6>
+                  <div class="raya py-1-raya rounded elegant-color col-md-2 my-3 d-md-block d-none"></div>
+                  <div class="d-md-none d-block my-3"></div>
+                  <p class="font11-px d-md-block d-none">Model: Nikon Z6Sensor Size: Full Frame Camera FormatMax Video Quality: 4K 25fpsIn-Body Stabilization: 5-Axis</p>
+                </div>
+                <div class="col-md-4">
+                  <h2 class="text-md-center font-weight-400">129,95676</h2>
+                  <div>
+                    <button class="btn btn-secondary col-md-7 btn-md mx-md-auto d-md-block d-none position-absolute" style="bottom: 0px;left: 0px;right: 0px;">Quiero comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pt-md-5 py-5 pb-md-0 bg-white">
+          <h2 class="text-center font49-px mt-md-4" data-aos="fade-down" data-aos-duration="500">Conoce todos nuestros productos</h2>
+          <div class="container mt-md-5 my-5 my-md-0 pt-4 d-flex justify-content-md-center pb-md-5 mx-auto pt-md-4 overflow-x-auto scroll-count" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-md-2 col-4"><img class="mx-auto d-block iconos-productos" src="image/icono-camara-circulo.svg" alt="" srcset=""/>
+              <div class="mt-4">
+                <h3 class="font24-px text-center">Rápido!</h3>
+              </div>
+            </div>
+            <div class="col-md-2 col-4"><img class="mx-auto d-block iconos-productos" src="image/icono-lentes-circulo.svg" alt="" srcset=""/>
+              <div class="mt-4">
+                <h3 class="font24-px text-center">Ahorrás!</h3>
+              </div>
+            </div>
+            <div class="col-md-2 col-4"><img class="mx-auto d-block iconos-productos" src="image/icono-proyector-circulo.svg" alt="" srcset=""/>
+              <div class="mt-4">
+                <h3 class="font24-px text-center">Seguro!</h3>
+              </div>
+            </div>
+            <div class="col-md-2 col-4"><img class="mx-auto d-block iconos-productos" src="image/icono-memoria-circulo.svg" alt="" srcset=""/>
+              <div class="mt-4">
+                <h3 class="font24-px text-center">Seguro!</h3>
+              </div>
+            </div>
+            <div class="col-md-2 col-4"><img class="mx-auto d-block iconos-productos" src="image/icono-accesorio-circulo.svg" alt="" srcset=""/>
+              <div class="mt-4">
+                <h3 class="font24-px text-center">Seguro!</h3>
+              </div>
+            </div>
+            <div class="col-md-2 col-4"><img class="mx-auto d-block iconos-productos" src="image/icono-gaming-circulo.svg" alt="" srcset=""/>
+              <div class="mt-4">
+                <h3 class="font24-px text-center">Seguro!</h3>
+              </div>
+            </div>
+          </div>
+          <div class="progress md-progress col-5 px-0 mx-auto d-md-none d-flex" style="height: .5rem !important;">
+            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </section>
+      </main>
+    </main>
+    <section class="mt-md-5 section-footer">
+      <div class="container position-absolute center-image-absolute pt-md-5 d-md-flex">
+        <div class="col-md-2 pt-5 pb-4 d-md-block d-flex"><img class="logo-footer" src="image/logo_wibla_footer.svg" alt="" srcset=""/>
+          <div class="mt-md-4 ml-auto d-block d-md-none"><a class="link-footer"><img class="icono-hover" src="image/facebook.png" data-name="facebook"/></a><a class="link-footer mx-3"><img class="icono-hover" src="image/linkedin.png" data-name="linkedin"/></a><a class="link-footer"><img class="icono-hover" src="image/instagram.png" data-name="instagram"/></a></div>
+        </div>
+        <div class="col-md-7 pt-md-5 row">
+          <div class="col-md-4 col-6">
+            <p class="text-white mb-2">Productos</p>
+            <div class="raya col-md-2 col-3 py-1-raya bg-white"></div>
+            <ul class="footer-list mt-md-4 mt-4">
+              <li><a href="#"><i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Cámara</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Lentes</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Proyectos</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-6">
+            <p class="text-white mb-2">Conocenos</p>
+            <div class="raya col-md-2 col-3 py-1-raya bg-white"></div>
+            <ul class="footer-list mt-md-4 mt-4">
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Nosotros</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Preguntas frecuentes</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Contacto</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 d-md-block d-none">
+            <p class="text-white">Siguenos</p>
+            <div class="raya col-md-2 col-1 py-1-raya bg-white"></div>
+            <div class="mt-md-4"><a class="link-footer"><img class="icono-hover" src="image/facebook.png" data-name="facebook"/></a><a class="link-footer mx-md-3"><img class="icono-hover" src="image/linkedin.png" data-name="linkedin"/></a><a class="link-footer"><img class="icono-hover" src="image/instagram.png" data-name="instagram"/></a></div>
+          </div>
+        </div>
+        <div class="col-md-3 pt-md-5 pt-4">
+          <p class="text-white mb-2">Newsletter
+            <div class="raya col-md-2 col-1 py-1-raya bg-white"></div>
+            <div class="mt-md-4">
+              <div class="md-form md-outline footer-input-pl mt-4">
+                <input class="form-control text-white" id="form1" type="text"/>
+                <label for="form1">Example label</label>
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+      <embed class="d-md-block d-none" src="image/fondo-footer.svg" type=""/>
+      <embed class="d-md-none d-block" src="image/fondo-footer-m-1.svg" type="" style="width: 100%;"/>
+    </section>
+    <footer class="pt-0 bg-white">
+      <!-- Copyright-->
+      <div class="footer-copyright py-3 text-center">
+        <div class="row container mx-auto">
+          <div class="col-md-6 col-12 text-md-left text-center font12-px">2020 © Wibla. Todos los derechos reservados. </div>
+          <div class="col-md-6 col-12 text-md-right text-center font12-px"><a class="mr-3 text-primary font-weight-500" href="#"> 
+              <u>Terminos y Condiciones</u></a><a class="text-primary font-weight-500" href="#"> 
+              <u>Política de Privacidad </u></a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/multi-range.js"></script>
+    <script src="js/rating.js"></script>
+    <script>
+       $(document).ready(function() {
+           $('.scroll-count').scroll(function(){
+               let scroll = $(this).scrollLeft();
+               let suma = scroll/12*6;
+               $('.progress-bar').css('width',suma+'px');
+           });
+           
+           $('.owl-home').owlCarousel({
+               loop:true,
+               margin:10,
+               responsiveClass:true,
+               autoplay:true,
+               autoplayTimeout:5000,
+               autoplayHoverPause:true,
+               items:1,
+               nav:false,
+               dots:false         
+           })
+           $('#multi6').mdbRange({
+               width: '100%',
+               single: {
+                   active: true,
+                   bgThumbColor: '#e8427d',
+                   textThumbColor: '#fff',
+                   multi: {
+                       active: true,
+                       rangeLength: 1,
+                       bgThumbColor: '#4285F4',
+                       textThumbColor: '#000'
+                   },
+               }
+           });
+           
+           $('#rateMe1').mdbRate();
+           $('#rateMe2').mdbRate();
+           $('.mdb-select').materialSelect();
+      });
+       
+    </script>
+    <script>
+      $(document).ready(function() {
+          AOS.init();
+          // SideNav Button Initialization
+          $(".button-collapse").sideNav({
+              edge: 'right', // Choose the horizontal origin
+              closeOnClick: false, // Closes side-nav on &lt;a&gt; clicks, useful for Angular/Meteor
+              breakpoint: 5440, // Breakpoint for button collapse
+              menuWidth: 240, // Width for sidenav
+              timeDurationOpen: 500, // Time duration open menu
+              timeDurationClose: 500, // Time duration open menu
+              timeDurationOverlayOpen: 200, // Time duration open overlay
+              timeDurationOverlayClose: 200, // Time duration close overlay
+              easingOpen: 'easeInOutQuad', // Open animation
+              easingClose: 'easeInOutQuad', // Close animation
+          });
+          $('.closed').on('click', function(){
+              $('#sidenav-overlay').click();
+          });
+      });
+      $(document).ready(function(){
+          $(".link-footer").hover(
+              function() {
+                  $(this).find('.icono-hover').attr("src",'image/'+$(this).find('.icono-hover').data('name')+'-h.png');
+              },
+              function() {
+                  $(this).find('.icono-hover').attr("src",'image/'+$(this).find('.icono-hover').data('name')+'.png');
+              },
+          );
+      });
+    </script>
+  </body>
+</html>

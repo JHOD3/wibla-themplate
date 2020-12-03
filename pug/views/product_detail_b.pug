@@ -1,0 +1,170 @@
+extends ../layouts/_layout
+block style
+    link(rel="stylesheet", href="css/multi-range.min.css")
+    link(rel="stylesheet", href="css/rating.min.css")
+block content
+    main(style="padding-top: 4.5rem;background: #F6F6F6; ")
+        section.pt-md-5.py-5.pb-md-0
+            .container.pt-md-5.px-5.col-md-9 
+                h2.font40-px(data-aos="fade-down" data-aos-duration="500" ) Cannon EOS r6
+                p.font16-px
+                    |Olvida todo lo que sabías de las cámaras mirrorless.<br class="d-md-block d-none">
+                    |El impecable rendimiento de la EOS R5 revolucionará tu fotografía y vídeo. 
+                    
+        section.pt-md-5.py-5.pb-md-0
+            .container.row.mx-auto.col-md-9
+                .col-md-6
+                    img(src="image/foto-2-1.png", alt="", srcset="", style="width: 100%;")
+                .col-md-6.d-md-flex.align-items-center
+                    div.px-4.px-md-5
+                        div
+                            small.font16-px Modelo
+                            h2.font43-px-d EOS R5
+                            div.d-flex.align-items-center
+                                span.rateMe2#rateMe3  
+                                p.ml-md-3.mb-0 6 comentarios  
+                        div.mt-md-4
+                            small.font16-px Precio
+                            h2.font43-px-d 110,95676
+                        botton.btn.btn-md.btn-secondary.col-8 Quiero comprar
+        section.pt-md-5.py-5.pb-md-0
+            .container.mx-auto.col-md-9.px-0
+                h2#especificaciones.font39-px.mt-md-5.px-4(data-aos="fade-down" data-aos-duration="500" ) 
+                    a(href='javascript:void(0)').text-dark
+                        i#icono-especificaciones.fal.fa-plus-circle.mr-3 
+                        |Especificaciones
+                table#target-especificaciones.table.table-striped.col-md-11.mx-auto.mt-5.col-10.d-none
+                    tbody
+                        tr  
+                            td Píxeles efectivos
+                            td 45,0 megapíxeles
+                        tr  
+                            td Estabilizador de imagen
+                            td Si
+                        tr  
+                            td Detección de sujetos
+                            td Si
+                        tr  
+                            td AF con baja iluminación
+                            td Si
+                        tr  
+                            td Velocidad de disparo en serie
+                            td 12 fps, con Servo AF 
+                        tr  
+                            td Videos
+                            td Vídeo 8K a hasta 30 fps 
+                        tr  
+                            td Wi-Fi
+                            td Si
+                        tr  
+                            td Ranuras de tarjeta
+                            td 2 tarjetas SD UHS-II
+                        tr  
+                            td Duración de la batería
+                            td 320 disparos (modo de ahorro de energía EVF)
+                .owl-carousel.owl-product.owl-theme.col-md-11.mx-auto.mt-5.col-12.px-0   
+                    img(src="image/producto_slider.png", alt="", srcset="")
+                    img(src="image/producto_slider.png", alt="", srcset="")
+                    img(src="image/producto_slider.png", alt="", srcset="")
+                    img(src="image/producto_slider.png", alt="", srcset="")
+        section.pt-md-5.pb-5.pt-3.pb-md-0.mb-md-5.pb-md-5
+            .container.mx-auto.col-md-9
+                h2#que-hay.font39-px.mt-md-5.px-4(data-aos="fade-down" data-aos-duration="500" ) 
+                    a(href='javascript:void(0)').text-dark
+                        i#icono-que-hay.fal.fa-plus-circle.mr-3 
+                        | ¿Qué hay en la caja?
+                div#target-que-hay.container.row.mx-auto.mt-md-5.d-none 
+                    div.col-md-6
+                        img(src="image/caja-content.png", alt="", srcset="").ml-md-auto.mx-auto.d-block.mt-md-0.mt-4.img-caja-content
+                    div.col-md-6.d-flex.align-items-center.mt-md-0.mt-5
+                        ul.content-caja-li 
+                            li 
+                                i.far.fa-check.mr-3
+                                |Cuerpo EOS R5
+                            li 
+                                i.far.fa-check.mr-3
+                                |Tapa de cámara R-F-5
+                            li 
+                                i.far.fa-check.mr-3
+                                |Correa ER-EOS R5
+                            li 
+                                i.far.fa-check.mr-3
+                                |Cargador de batería LC-E6E
+                            li 
+                                i.far.fa-check.mr-3
+                                |LP-E6NH
+                            li 
+                                i.far.fa-check.mr-3
+                                |Cubierta de la batería
+                            li 
+                                i.far.fa-check.mr-3
+                                |Cable CA
+                            li 
+                                i.far.fa-check.mr-3
+                                |Protector de cable IFC IFC-100U +
+                            li 
+                                i.far.fa-check.mr-3
+                                |Manual de usuario
+        include ../components/_top_footer
+block script
+    script(src="js/multi-range.js")
+    script(src="js/rating.js")
+    script.
+        $(document).ready(function() {
+            $("#especificaciones").on("click",function() {	 
+                $('#icono-especificaciones').toggleClass('rotar-plug', 1500);
+                $('#target-especificaciones').toggleClass('d-none',1500);
+            });
+            $("#que-hay").on("click",function() {
+                $('#icono-que-hay').toggleClass('rotar-plug', 1500);	 
+                $('#target-que-hay').toggleClass('d-none',1500);
+            });
+            $('.scroll-count').scroll(function(){
+                let scroll = $(this).scrollLeft();
+                let suma = scroll/12*6;
+                $('.progress-bar').css('width',suma+'px');
+            });
+            
+            $('.owl-home').owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                items:1,
+                nav:false,
+                dots:false         
+            })
+             $('.owl-product').owlCarousel({
+                loop:true,
+                margin:10,
+                //- responsiveClass:true,
+                //- autoplay:true,
+                //- autoplayTimeout:5000,
+                //- autoplayHoverPause:true,
+                items:1,
+                nav:false,
+                dots:true     
+            })
+            $('#multi6').mdbRange({
+                width: '100%',
+                single: {
+                    active: true,
+                    bgThumbColor: '#e8427d',
+                    textThumbColor: '#fff',
+                    multi: {
+                        active: true,
+                        rangeLength: 1,
+                        bgThumbColor: '#4285F4',
+                        textThumbColor: '#000'
+                    },
+                }
+            });
+            
+            $('#rateMe3').mdbRate();
+            //- $('#rateMe2').mdbRate();
+            //- $('.mdb-select').materialSelect();
+       });
+        
+        

@@ -1,0 +1,90 @@
+extends ../layouts/_layout
+block style
+    link(rel="stylesheet", href="css/multi-range.min.css")
+    link(rel="stylesheet", href="css/rating.min.css")
+block content
+    main(style="padding-top: 4.5rem;")
+        section.bg-section-home
+            .container.position-absolute-md.absulute-center.py-section-home.d-md-flex.d-block.pt-5.px-md-5.position-absolute.center-image-absolute(style="z-index: 99;")
+                div.col-md-5.col-12.mt-container-home.mt-4
+                    div
+                        h1.montserrat.text-md-left.text-dark.font43-px.text-center  Preguntas frecuentes
+                        p.mt-md-4.text-md-left.font16-px.text-dark.text-center
+                            | Si no encontrás tu consulta acá, podés <br> escribirnos a  
+                            a(href="mailto:ayuda@wibla.com").text-primary ayuda@wibla.com
+                            |con tu <br> pregunta, estamos para ayudarte.
+                .col-md-7.col-12.mt-container-home.d-none.d-md-block
+            div.owl-carousel.owl-home.d-none.d-md-block
+                embed(src="image/fondo_header_faqs.png", style="width:100%").mx-auto.d-block
+                embed(src="image/fondo_header_faqs.png", style="width:100%").mx-auto.d-block
+                embed(src="image/fondo_header_faqs.png", style="width:100%").mx-auto.d-block
+            div.owl-carousel.owl-home.d-block.d-md-none
+                embed(src="image/fondo_header_faqs-m.png", style="width:100%").mx-auto.d-block
+                embed(src="image/fondo_header_faqs-m.png", style="width:100%").mx-auto.d-block
+                embed(src="image/fondo_header_faqs-m.png", style="width:100%").mx-auto.d-block
+        section.pt-md-5.py-5.pb-md-0
+            h2.text-center.font39-px.mt-md-5(data-aos="fade-down" data-aos-duration="500" ) Preguntas frecuentes   
+            #accordionEx194.accordion.md-accordion.accordion-3.col-md-7.mx-auto.py-md-5(role='tablist' aria-multiselectable='true')
+                .card.border-0
+                    #heading4.card-header(role='tab')
+                        a(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse4' aria-expanded='true' aria-controls='collapse4')
+                            p.mb-0.mt-3.text-muted.font18-px
+                                i.fal.fa-plus-circle.rotate-icon-plus.font30-px.float-left.mr-3
+                                | ¿Lorem ipsum dolor sit amet, consectetuer adipiscing elit?
+                    #collapse4.collapse.show(role='tabpanel' aria-labelledby='heading4' data-parent='#accordionEx194')
+                        .card-body.pt-0.pl-md-5
+                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                .card.border-0
+                    #heading5.card-header(role='tab')
+                        a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse5' aria-expanded='false' aria-controls='collapse5')
+                            p.mb-0.mt-3.text-muted.font18-px
+                                i.fal.fa-plus-circle.rotate-icon-plus.font30-px.float-left.mr-3
+                                | ¿Magna aliquam erat volutpat?
+                    #collapse5.collapse(role='tabpanel' aria-labelledby='heading5' data-parent='#accordionEx194')
+                        .card-body.pt-0.pl-md-5
+                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                .card.border-0
+                    #heading6.card-header(role='tab')
+                        a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse6' aria-expanded='false' aria-controls='collapse6')
+                            p.mb-0.mt-3.text-muted.font18-px
+                                i.fal.fa-plus-circle.rotate-icon-plus.font30-px.float-left.mr-3
+                                | ¿Lorem ipsum dolor sit amet, consectetuer adipiscing elit? 
+                    #collapse6.collapse(role='tabpanel' aria-labelledby='heading6' data-parent='#accordionEx194')
+                        .card-body.pt-0.pl-md-5
+                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                .card.border-0
+                    #heading6.card-header(role='tab')
+                        a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse7' aria-expanded='false' aria-controls='collapse7')
+                            p.mb-0.mt-3.text-muted.font18-px
+                                i.fal.fa-plus-circle.rotate-icon-plus.font30-px.float-left.mr-3
+                                | ¿Magna aliquam erat volutpat?
+                    #collapse7.collapse(role='tabpanel' aria-labelledby='heading6' data-parent='#accordionEx194')
+                        .card-body.pt-0.pl-md-5
+                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                .card.border-0
+                    #heading6.card-header(role='tab')
+                        a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse8' aria-expanded='false' aria-controls='collapse8')
+                            p.mb-0.mt-3.text-muted.font18-px
+                                i.fal.fa-plus-circle.rotate-icon-plus.font30-px.float-left.mr-3
+                                | ¿Lorem ipsum dolor sit amet, consectetuer adipiscing elit? 
+                    #collapse8.collapse(role='tabpanel' aria-labelledby='heading6' data-parent='#accordionEx194')
+                        .card-body.pt-0.pl-md-5
+                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+        include ../components/_top_footer
+block script
+    script.
+        $(document).ready(function() {
+            $('.owl-home').owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                items:1,
+                nav:false,
+                dots:false         
+            })
+        });
+        
+        

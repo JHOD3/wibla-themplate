@@ -1,0 +1,68 @@
+extends ../layouts/_layout
+block style
+    link(rel="stylesheet", href="css/multi-range.min.css")
+    link(rel="stylesheet", href="css/rating.min.css")
+block content
+    main(style="padding-top: 4.5rem;")
+        section.bg-section-contact
+            .container.position-absolute-md.absulute-center.py-section-home.d-md-flex.d-block.pt-5.px-md-5.position-absolute.center-image-absolute(style="z-index: 99;")
+                div.col-md-5.col-12.mt-container-home.mt-md-5
+                    div
+                        h1.montserrat.text-md-left.text-white.font42-px.text-center  Contacto
+                        p.mt-md-4.text-md-left.font16-px.text-white.text-center
+                            | Si no encontrás tu consulta acá, podés <br> escribirnos a  
+                            a(href="mailto:ayuda@wibla.com").text-white ayuda@wibla.com
+                            |con tu <br> pregunta, estamos para ayudarte.
+                .col-md-7.col-12.mt-container-home.pt-md-5
+                    form.card.d-flex.py-5(style="border-radius: 20px;")
+                        .px-md-5.col-md-12.d-md-flex
+                            .md-form.col-md-6
+                                input#form1.form-control(type='text').is-invalid
+                                label(for='form1', style="left:auto;") Nombre
+                                .invalid-feedback.d-flex.align-items-center 
+                                    i.fas.fa-exclamation-circle.mr-2.font20-px                                       
+                                    | Formato de mail inválido
+                            .md-form.col-md-6
+                                input#form2.form-control(type='text').is-invalid
+                                label(for='form2', style="left:auto;") Apellido
+                                .invalid-feedback.d-flex.align-items-center 
+                                    i.fas.fa-exclamation-circle.mr-2.font20-px                                       
+                                    | Formato de mail inválido
+                        .px-md-5.col-md-12.d-md-flex
+                            .md-form.col-md-6
+                                input#form3.form-control(type='text').is-valid
+                                label(for='form3', style="left:auto;") Email
+                                .valid-feedback 
+                            select.mdb-select.md-form.col-md-6
+                                option(value='' disabled='' selected='') Motivo de consulta
+                                option(value='1') Option 1
+                                option(value='2') Option 2
+                                option(value='3') Option 3
+                        .px-md-5.col-md-12.d-md-flex
+                            .md-form.col-md-12
+                                textarea#form7.md-textarea.form-control(rows='3')
+                                label(for='form7', style="left:auto;") Consulta
+                        .px-md-5.col-md-12
+                            bottom.btn.btn-md.btn-primary.col-md-3.mt-md-5.col-6 Enviar
+
+            embed(src="image/header_contacto.svg", style="width:100%").mx-auto.d-none.d-md-block
+            embed(src="image/header_contacto-m.svg", style="width:100%").mx-auto.d-block.d-md-none
+        include ../components/_top_footer
+block script
+    script.
+        $(document).ready(function() {
+            $('.owl-home').owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                items:1,
+                nav:false,
+                dots:false         
+            })
+            $('.mdb-select').materialSelect();
+        });
+        
+        

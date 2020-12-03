@@ -328,10 +328,12 @@ select {
   margin: 0;
   overflow-y: auto;
   background-color: $dropdown-bg-color;
-  box-shadow: $z-depth-1;
+//   box-shadow: $z-depth-1;
   opacity: 0;
   will-change: width, height;
-
+  border: 1px solid #e8427d;
+//   margin-top: 37px;
+  border-radius: 0 0 20px 20px;
   li {
     width: 100%;
     clear: both;
@@ -351,7 +353,8 @@ select {
       display: block;
       padding: $material-select-dropdown-content-li-span-padding;
       font-size: $material-select-dropdown-content-li-span-font-size;
-      color: $dropdown-color-mdb;
+    //   color: $dropdown-color-mdb;
+      color: #484848;
     }
 
     // Icon alignment override

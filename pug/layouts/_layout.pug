@@ -4,6 +4,7 @@ html(lang="es")
     body
         header 
             include ../components/_menu_sidebar
+            block filter_order
             include ../components/_header
         main
             block content
@@ -11,11 +12,13 @@ html(lang="es")
         script(src='js/jquery-3.4.1.min.js')
         script(type='text/javascript' src='js/popper.min.js')
         script(type='text/javascript' src='js/bootstrap.js')
-        script(type='text/javascript' src='js/mdb.min.js')
+        script(type='text/javascript' src='js/mdb.js')
         script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
         block script
         script.
             $(document).ready(function() {
+                AOS.init();
                 // SideNav Button Initialization
                 $(".button-collapse").sideNav({
                     edge: 'right', // Choose the horizontal origin
@@ -29,7 +32,7 @@ html(lang="es")
                     easingOpen: 'easeInOutQuad', // Open animation
                     easingClose: 'easeInOutQuad', // Close animation
                 });
-                $('#closed').on('click', function(){
+                $('.closed').on('click', function(){
                     $('#sidenav-overlay').click();
                 });
             });

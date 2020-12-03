@@ -1,0 +1,232 @@
+extends ../layouts/_layout
+block style
+    link(rel="stylesheet", href="css/multi-range.min.css")
+    link(rel="stylesheet", href="css/rating.min.css")
+block filter_order
+    include ../components/_filter_sidebar
+    include ../components/_order_sidebar
+block content
+    main(style="padding-top: 4.5rem; he ")
+        section.bg-section-home
+            .container.position-absolute-md.absulute-center.py-section-home.d-md-flex.d-block.pt-5.px-md-5.position-absolute.center-image-absolute(style="z-index: 99;")
+                div.col-md-5.col-12.mt-container-home.mt-4
+                    div
+                        p.font12-px.mb-1.mb-md-2 
+                            a.text-white(href="#") Categorías  /   
+                            a.text-white(href="#") Cámaras digitales   /   
+                            a.text-white(href="#") Cámaras mirrorless
+                        h1.montserrat.text-md-left.text-white.font43-px Cámaras mirrorless
+                .col-md-7.col-12.mt-container-home.d-none.d-md-block
+            div.owl-carousel.owl-home.d-none.d-md-block
+                embed(src="image/header_product.png", style="width:100%").mx-auto.d-block
+                embed(src="image/header_product.png", style="width:100%").mx-auto.d-block
+                embed(src="image/header_product.png", style="width:100%").mx-auto.d-block
+            div.owl-carousel.owl-home.d-block.d-md-none
+                embed(src="image/header_product-m.png", style="width:100%").mx-auto.d-block
+                embed(src="image/header_product-m.png", style="width:100%").mx-auto.d-block
+                embed(src="image/header_product-m.png", style="width:100%").mx-auto.d-block
+        section.pt-md-5.py-5.pb-md-0(style="background: #F6F6F6;")
+            div.container-fluid.row.mx-0
+                .col-9.d-md-none.d-block.d-flex.mx-auto.mb-4
+                    a.button-collapse.col-6.d-flex.align-items-center(data-activates="slide-out-filter")
+                        p.mb-0.mr-3 Filtro 
+                        img(src="image/icono-filter.svg", alt="", srcset="").icono-filter-order
+                    a.button-collapse.col-6.d-flex.align-items-center(data-activates="slide-out-order")
+                        p.mb-0.mr-3 Ordenar 
+                        img(src="image/icono-ordenar.svg", alt="", srcset="").icono-filter-order
+                .col-md-12.d-md-block.d-none
+                    select.mdb-select.md-form.col-2.ml-md-auto.px-0
+                        option(value='' disabled='' selected='') Ordenar por
+                        option(value='1') Descatados
+                        option(value='2') En Oferta
+                        option(value='3') Nuevos
+                        option(value='3') Order 1
+                        option(value='3') Order 2
+                .col-md-3.filtros.d-md-block.d-none
+                    #accordionEx194.accordion.md-accordion.accordion-3(role='tablist' aria-multiselectable='true')
+                        .card
+                            #heading4.card-header.border-bottom(role='tab')
+                                a(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse4' aria-expanded='true' aria-controls='collapse4')
+                                    p.mb-0.mt-3.text-muted
+                                        | Marca
+                                        i.fas.fa-angle-down.rotate-icon
+                            #collapse4.collapse.show(role='tabpanel' aria-labelledby='heading4' data-parent='#accordionEx194')
+                                .card-body.pt-0
+                                    ul.mt-md-3  
+                                        li
+                                            a(href="#") Nikon (16)
+                                        li
+                                            a(href="#") Cannon (4)
+                                        li
+                                            a(href="#") Sony (8)
+                        .card
+                            #heading5.card-header.border-bottom(role='tab')
+                                a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse5' aria-expanded='false' aria-controls='collapse5')
+                                    p.mb-0.mt-3.text-muted
+                                        | Modelo
+                                        i.fas.fa-angle-down.rotate-icon
+                            #collapse5.collapse(role='tabpanel' aria-labelledby='heading5' data-parent='#accordionEx194')
+                                .card-body.pt-0
+                                    p
+                                        ul.mt-md-3  
+                                            li
+                                                a(href="#") Digitales (16)
+                                            li
+                                                a(href="#") Bridge (4)
+                                            li
+                                                a(href="#") Reflex (8)
+                        .card
+                            #heading6.card-header.border-bottom(role='tab')
+                                a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse6' aria-expanded='false' aria-controls='collapse6')
+                                    p.mb-0.mt-3.text-muted
+                                        | Rengo de precio 
+                                        i.fas.fa-angle-down.rotate-icon
+                            #collapse6.collapse(role='tabpanel' aria-labelledby='heading6' data-parent='#accordionEx194')
+                                .card-body.pt-0
+                                    form.multi-range-field.my-5.pb-5
+                                        input#multi6.multi-range.col-12(type='range')
+
+                        .card
+                            #heading6.card-header.border-bottom(role='tab')
+                                a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse7' aria-expanded='false' aria-controls='collapse7')
+                                    p.mb-0.mt-3.text-muted
+                                        | Resolución 
+                                        i.fas.fa-angle-down.rotate-icon
+                            #collapse7.collapse(role='tabpanel' aria-labelledby='heading6' data-parent='#accordionEx194')
+                                .card-body.pt-0
+                                    p
+                                        ul.mt-md-3  
+                                            li
+                                                a(href="#") 1600x1200 (16)
+                                            li
+                                                a(href="#") 1600x1200 (4)
+                                            li
+                                                a(href="#") 1600x1200 (8)
+                        .card
+                            #heading6.card-header.border-bottom(role='tab')
+                                a.collapsed(data-toggle='collapse' data-parent='#accordionEx194' href='#collapse8' aria-expanded='false' aria-controls='collapse8')
+                                    p.mb-0.mt-3.text-muted
+                                        | Calificación 
+                                        i.fas.fa-angle-down.rotate-icon
+                            #collapse8.collapse(role='tabpanel' aria-labelledby='heading6' data-parent='#accordionEx194')
+                                .card-body.pt-0
+                                   .container.mt-3
+                                        span.rateMe1
+                .col-md-9.mx-auto.d-block
+                    .card-product.d-md-flex.d-block.py-4.mb-5.px-4.mx-md-0.mx-3.px-md-0(data-aos="fade-up" data-aos-duration="1500")
+                        .card-destacados.d-md-block.d-none
+                            i.fas.fa-star.mr-2
+                            | Destacado
+                        .col-md-4
+                            .d-block.d-md-none
+                                p.mb-0.mt-2 Cámara mirrorless
+                                h5 Cannon EOS R6
+                            img(src="image/foto-2.svg", alt="", srcset="")
+                        .col-md-4.px-md-0.mt-md-0.mt-4
+                            h4.font22-px.d-md-block.d-none Cannon Eos R6 Mirrorless
+                            h6.font16-px Digital Camera with NIKKOR Z <br> 24-70mm f/4 S Lens
+                            .raya.py-1-raya.rounded.elegant-color.col-md-2.my-3.d-md-block.d-none
+                            .d-md-none.d-block.my-3
+                            p.font11-px.d-md-block.d-none Model: Nikon Z6Sensor Size: Full Frame Camera FormatMax Video Quality: 4K 25fpsIn-Body Stabilization: 5-Axis
+                        .col-md-4
+                            h2.text-md-center.font-weight-400 129,95676
+                            div
+                                button.btn.btn-secondary.col-md-7.btn-md.mx-md-auto.d-md-block.d-none.position-absolute(style="bottom: 0px;left: 0px;right: 0px;") Quiero comprar
+                    .card-product.d-md-flex.d-block.py-4.mb-5.px-4.mx-md-0.mx-3.px-md-0(data-aos="fade-up" data-aos-duration="1500")
+                        .col-md-4
+                            .d-block.d-md-none
+                                p.mb-0.mt-2 Cámara mirrorless
+                                h5 Cannon EOS R6
+                            img(src="image/foto-2.svg", alt="", srcset="")
+                        .col-md-4.px-md-0.mt-md-0.mt-4
+                            h4.font22-px.d-md-block.d-none Cannon Eos R6 Mirrorless
+                            h6.font16-px Digital Camera with NIKKOR Z <br> 24-70mm f/4 S Lens
+                            .raya.py-1-raya.rounded.elegant-color.col-md-2.my-3.d-md-block.d-none
+                            .d-md-none.d-block.my-3
+                            p.font11-px.d-md-block.d-none Model: Nikon Z6Sensor Size: Full Frame Camera FormatMax Video Quality: 4K 25fpsIn-Body Stabilization: 5-Axis
+                        .col-md-4
+                            h2.text-md-center.font-weight-400 129,95676
+                            div
+                                button.btn.btn-secondary.col-md-7.btn-md.mx-md-auto.d-md-block.d-none.position-absolute(style="bottom: 0px;left: 0px;right: 0px;") Quiero comprar
+                    .card-product.d-md-flex.d-block.py-4.mb-5.px-4.mx-md-0.mx-3.px-md-0(data-aos="fade-up" data-aos-duration="1500")
+                        .card-oferta.d-md-block.d-none
+                            i.fas.fa-fire.mr-2
+                            | Oferta
+                        .col-md-4
+                            .d-block.d-md-none
+                                p.mb-0.mt-2 Cámara mirrorless
+                                h5 Cannon EOS R6
+                            img(src="image/foto-2.svg", alt="", srcset="")
+                        .col-md-4.px-md-0.mt-md-0.mt-4
+                            h4.font22-px.d-md-block.d-none Cannon Eos R6 Mirrorless
+                            h6.font16-px Digital Camera with NIKKOR Z <br> 24-70mm f/4 S Lens
+                            .raya.py-1-raya.rounded.elegant-color.col-md-2.my-3.d-md-block.d-none
+                            .d-md-none.d-block.my-3
+                            p.font11-px.d-md-block.d-none Model: Nikon Z6Sensor Size: Full Frame Camera FormatMax Video Quality: 4K 25fpsIn-Body Stabilization: 5-Axis
+                        .col-md-4
+                            h2.text-md-center.font-weight-400 129,95676
+                            div
+                                button.btn.btn-secondary.col-md-7.btn-md.mx-md-auto.d-md-block.d-none.position-absolute(style="bottom: 0px;left: 0px;right: 0px;") Quiero comprar
+                    .card-product.d-md-flex.d-block.py-4.mb-5.px-4.mx-md-0.mx-3.px-md-0(data-aos="fade-up" data-aos-duration="1500")
+                        .card-nuevo.d-md-block.d-none
+                            i.fas.fa-heart.mr-2
+                            | ¡Nuevo!
+                        .col-md-4
+                            .d-block.d-md-none
+                                p.mb-0.mt-2 Cámara mirrorless
+                                h5 Cannon EOS R6
+                            img(src="image/foto-2.svg", alt="", srcset="")
+                        .col-md-4.px-md-0.mt-md-0.mt-4
+                            h4.font22-px.d-md-block.d-none Cannon Eos R6 Mirrorless
+                            h6.font16-px Digital Camera with NIKKOR Z <br> 24-70mm f/4 S Lens
+                            .raya.py-1-raya.rounded.elegant-color.col-md-2.my-3.d-md-block.d-none
+                            .d-md-none.d-block.my-3
+                            p.font11-px.d-md-block.d-none Model: Nikon Z6Sensor Size: Full Frame Camera FormatMax Video Quality: 4K 25fpsIn-Body Stabilization: 5-Axis
+                        .col-md-4
+                            h2.text-md-center.font-weight-400 129,95676
+                            div
+                                button.btn.btn-secondary.col-md-7.btn-md.mx-md-auto.d-md-block.d-none.position-absolute(style="bottom: 0px;left: 0px;right: 0px;") Quiero comprar
+        include ../components/_top_footer
+
+block script
+    script(src="js/multi-range.js")
+    script(src="js/rating.js")
+    script.
+        $(document).ready(function() {
+            $('.scroll-count').scroll(function(){
+                let scroll = $(this).scrollLeft();
+                let suma = scroll/12*6;
+                $('.progress-bar').css('width',suma+'px');
+            });
+            
+            $('.owl-home').owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                items:1,
+                nav:false,
+                dots:false         
+            })
+            $('#multi6').mdbRange({
+                width: '100%',
+                single: {
+                    active: true,
+                    bgThumbColor: '#e8427d',
+                    textThumbColor: '#fff',
+                    multi: {
+                        active: true,
+                        rangeLength: 1,
+                        bgThumbColor: '#4285F4',
+                        textThumbColor: '#000'
+                    },
+                }
+            });
+            
+            $('#rateMe1').mdbRate();
+            $('#rateMe2').mdbRate();
+            $('.mdb-select').materialSelect();
+       });
+        
