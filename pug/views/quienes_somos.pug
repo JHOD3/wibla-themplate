@@ -1,0 +1,45 @@
+extends ../layouts/_layout
+block style
+    link(rel="stylesheet", href="css/multi-range.min.css")
+    link(rel="stylesheet", href="css/rating.min.css")
+block content
+    main(style="padding-top: 4.5rem;")
+        section
+            .container.position-absolute-md.absulute-center.py-section-home.d-md-flex.d-block.pt-5.px-md-5.position-absolute.center-image-absolute(style="z-index: 99;")
+                div.col-md-6.col-12.mt-container-home.mt-md-5
+                    div.pl-md-5
+                        h1.montserrat.text-md-left.text-dark.font35-px.text-center  Imagen y Tecnología para
+                        embed(src="image/creadores_text.svg", type="").creadores-text 
+                .col-md-6.col-12.mt-container-home.pt-md-5
+                    
+            embed(src="image/header_quienes_somos.png", style="width:100%").mx-auto.d-none.d-md-block
+            embed(src="image/header_quienes_somos-m.png", style="width:100%").mx-auto.d-block.d-md-none
+        section
+            .position-absolute.center-image-absolute
+                .col-md-8.mx-auto.d-block.pt-md-5.mt-md-5.mt-4
+                    embed(src="image/nuestra_vision_text.svg", type="").vision-text
+                .col-md-7.mx-auto.d-block
+                    h2.text-secondary.text-center.font36-px.font-weight-400(style="margin-top: -1.9rem;") Queremos inspirarte para que creando <br> y explorando puedas vivir una <br> libre y creativa.
+                    p.mt-md-5.text-md-left.text-center.font16-px WiBla es una empresa de equipamiento tecnológico para fotografía ,video, audio, computación y electrónica. Trabajamos sin intermediarios para asegurarte la mejor calidad de productos, con la tranquilidad de ofrecer garantías oficiales y el mejor precio.
+                .col-md-6.mx-auto.d-block.pt-md-3.col-7  
+                    h2.text-secondary.text-center.pt-md-5.mt-5.font38-px.font-weight-400 Encontrá en Wibla la última información en tecnología y los mejores equipos a un clic.
+            img(src="image/fondo_quienes_somos.png", alt="", style="margin-bottom: -6rem;width: 100%;").d-none.d-md-block
+            img(src="image/fondo_quienes_somos-m.png", alt="", style="margin-bottom: -28px;width: 100%;").d-block.d-md-none
+block script
+    script.
+        $(document).ready(function() {
+            $('.owl-home').owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                items:1,
+                nav:false,
+                dots:false         
+            })
+            $('.mdb-select').materialSelect();
+        });
+        
+        

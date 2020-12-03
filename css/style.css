@@ -429,7 +429,7 @@ ul.content-caja-li li {
 }
 
 .bg-section-contact {
-  margin-bottom: 12rem;
+  margin-bottom: 18rem;
 }
 
 .form-control.is-valid, .was-validated .form-control:valid {
@@ -441,6 +441,30 @@ ul.content-caja-li li {
 }
 
 @media screen and (max-width: 768px) {
+  .font35-px {
+    font-size: 30px;
+  }
+
+  .font16-px {
+    font-size: 11px;
+  }
+
+  .font38-px {
+    font-size: 16px;
+  }
+
+  .creadores-text {
+    width: 82%;
+  }
+
+  .vision-text {
+    width: 100%;
+  }
+
+  .font36-px {
+    font-size: 20px;
+  }
+
   .bg-section-contact {
     margin-bottom: 20rem;
   }
