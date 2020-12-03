@@ -1,0 +1,73 @@
+extends ../layouts/_layout
+block content
+    main(style="padding-top: 4.5rem; he ")
+        section.bg-section-home
+            .container.position-absolute-md.absulute-center.py-section-home.d-md-flex.d-block.pt-5.px-md-5.position-absolute.center-image-absolute(style="z-index: 99;")
+                div.col-md-5.col-12.mt-container-home.mt-4
+                    div
+                        h1.font-weight-bold.montserrat.text-md-left.text-primary.font43-px(data-aos="fade-right" data-aos-duration="500" ) El marketplace <br> para profesionales <br> audiovisuales
+                        p.font-weight-500.inline15-rem.mt-md-4.text-md-left.font18-px(data-aos="fade-up" data-aos-duration="1500" ) Lorem ipsum dolor sit amet, consectetuer <br> adipiscing elit, sed diam nonummy nibh <br> euismod tincidunt.
+                    .d-md-none.d-block
+                    div.pt-3(data-aos="flip-up" data-aos-duration="2000")
+                        a(href="").btn.btn-outline-primary.btn-rounded.d-block.ml-md-0.col-md-4.col-6.font-weight-bold Comprar ahora!
+                .col-md-7.col-12.mt-container-home.d-none.d-md-block
+            div.owl-carousel.owl-home.d-none.d-md-block
+                embed(src="image/fondo_header.png").mx-auto.d-block
+                embed(src="image/fondo_header.png").mx-auto.d-block
+                embed(src="image/fondo_header.png").mx-auto.d-block
+            div.owl-carousel.owl-home.d-block.d-md-none
+                embed(src="image/fondo_header-m.png", style="width:100%").mx-auto.d-block
+                embed(src="image/fondo_header-m.png", style="width:100%").mx-auto.d-block
+                embed(src="image/fondo_header-m.png", style="width:100%").mx-auto.d-block
+        section.pt-md-5.containt-layout.mb-5.pb-5
+            .col-md-8.mx-auto.d-block.col-10.mt-5
+                p En Wibla tenemos la solución llave en mano para Empresas, Instituciones educativas y Organismos gubernamentales, proveyendo un servicio dedicado y un precio preferencial.
+                p Nuestro objetivo es asegurar equipamiento tecnológico de punta en fotografía ,video, audio, computación y electrónica a la altura de las exigencias profesionales de mediana y gran escala.
+            .container.d-md-flex.my-md-5.py-md-4
+                a.col-md-4(href="#")
+                    img(src="image/card-1.svg", type="")
+                a.col-md-4(href="#")
+                    img(src="image/card-2.svg", type="")
+                a.col-md-4(href="#")
+                    img(src="image/card-3.svg", type="")
+
+block script
+    script.
+        $(document).ready(function() {
+            $('.scroll-count').scroll(function(){
+                let scroll = $(this).scrollLeft();
+                let suma = scroll/12*5;
+                $('.progress-bar').css('width',suma+'px');
+            });
+            
+            $('.owl-home').owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                items:1,
+                nav:false,
+                dots:false         
+            })
+            $('.owl-product-1').owlCarousel({
+                loop:true,
+                margin:0,
+                responsiveClass:true,
+                //- autoplay:true,
+                //- autoplayTimeout:5000,
+                //- autoplayHoverPause:true,
+                nav:false,
+                dots:false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    768:{
+                        items:3
+                    }
+                }         
+            })
+            
+        });

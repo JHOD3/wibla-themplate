@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>   
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Wibla</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/wibla.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/multi-range.min.css"/>
+    <link rel="stylesheet" href="css/rating.min.css"/>
+  </head>
+  <body>
+    <header> 
+      <div class="side-nav fixed bg-white" id="slide-out">
+        <ul class="custom-scrollbar">
+          <li class="d-flex container pb-4">   <a class="pl-0 pl-3 pt-2" href="/"><img src="image/logo_wibla_header.svg" alt=""/></a><a class="closed button-collapse ml-auto p-3 pt-0" href=""><img src="image/icono-x.svg" alt="" srcset="" style="width: 30px;"/></a></li>
+          <li>   
+            <ul class="collapsible collapsible-accordion col-8 mx-auto mt-5">
+              <li> <a class="collapsible-header waves-effect" href="c_dai.html"><i class="fas fa-chevron-right"></i>Cotización DAI</a></li>
+              <li> <a class="collapsible-header waves-effect" href="c_btc.html"><i class="fas fa-chevron-right"> </i>Cotización BTC</a></li>
+              <li> <a class="collapsible-header waves-effect" href="blog"> <i class="fas fa-chevron-right"></i>Blog</a></li>
+              <li> 
+                <div class="md-form md-outline mt-4 ml-3 mt-5 input-with-post-icon"><i class="fas fa-search input-prefix text-muted" style="position: absolute;right: 6px;font-size: 23px;top: 9px;"></i>
+                  <input class="form-control text-primary form-control-lg" id="form1" type="text"/>
+                  <label class="text-muted" for="form1">Buscar</label>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+      </div>
+      <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav bg-white">
+        <div class="container">
+          <div class="col-md-2 col-6 py-md-2 py-3"><a href="/"><img src="image/logo_wibla_header.svg" alt=""/></a></div>
+          <div class="d-flex change-mode col-md-10 col-6 align-items-center" style="position: static;">
+            <div class="d-flex d-md-none ml-auto"><a class="button-collapse" href="" data-activates="slide-out"><img src="image/icono-bar.svg" alt="" srcset="" style="width: 40px;"/></a></div>
+            <ul class="nav navbar-nav nav-flex-icons d-md-flex d-none">
+              <li class="nav-item dropdown notifications-nav"><a class="nav-link align-items-center d-flex" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"><span class="d-none d-md-inline-block">Cámaras</span><i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-2"></div>
+                      <div class="col-md-2 pl-4"><a class="dropdown-item text-left" href="#">Cannon EOS R6 </a><a class="dropdown-item text-left" href="#">Cannon EOS R10 </a></div>
+                      <div class="col-md-2"><a class="dropdown-item text-left" href="#">Cannon EOS R6 </a><a class="dropdown-item text-left" href="#">Cannon EOS R10 </a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"><span class="clearfix d-none d-sm-inline-block">Lentes</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><span class="clearfix d-none d-sm-inline-block">Proyectores</span></a></li>
+              <li class="nav-item dropdown notifications-nav"><a class="nav-link align-items-center d-flex" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"><span class="d-none d-md-inline-block">Empresas</span><i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-6" style="padding-left: 4.8rem;"><a class="dropdown-item text-left" href="#">Empresa 1</a><a class="dropdown-item text-left" href="#">Empresa 2</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto align-items-center d-md-flex d-none">
+              <li class="nav-item"><a class="nav-link text nav-link-primary" href="#"><span class="clearfix d-none d-sm-inline-block lupa-border"><i class="fas fa-search"></i></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <main style="padding-top: 4.5rem;background: #F3F3F3; ">
+        <section class="bg-section-home">
+          <div class="container position-absolute-md absulute-center py-section-home d-md-flex d-block pt-5 px-md-5 position-absolute center-image-absolute" style="z-index: 99;">
+            <div class="col-md-5 col-12 mt-container-home mt-4">
+              <div class="pl-md-5">
+                <h1 class="montserrat text-md-left text-white font43-px">Organismos Gubernamentales</h1>
+              </div>
+            </div>
+            <div class="col-md-7 col-12 mt-container-home d-none d-md-block"></div>
+          </div>
+          <embed class="mx-auto d-md-block d-none" src="image/header_1.svg" style="width:100%"/>
+          <embed class="mx-auto d-block d-md-none" src="image/header_1-m.svg" style="width:100%"/>
+        </section>
+        <section class="pt-md-5 py-5 pb-md-0">
+          <div class="container pt-md-5 col-md-9 mx-auto d-md-flex">  
+            <div class="col-md-7"> 
+              <p>Ofrecemos un servicio robusto para Instituciones estatales, abarcando proyectos de mediana y gran escala para el gobierno nacional, provincial y municipal.</p>
+              <p>Asegurando junto a nuestro equipo de expertos un equipamiento tecnológico en fotografía,video, audio, computación y electrónica, con beneficios exclusivos para el sector.</p>
+            </div>
+            <div class="col-md-5">
+              <h3 class="ml-md-5">¿Por qué Wibla?</h3>
+              <ul class="content-caja-li pl-md-5 pl-0">
+                <li><i class="far fa-check mr-3 text-warning"></i>Asesoramiento Integral</li>
+                <li><i class="far fa-check mr-3 text-warning"></i>Precios competitivos</li>
+                <li><i class="far fa-check mr-3 text-warning"></i>Calidad y garantía asegurada</li>
+                <li><i class="far fa-check mr-3 text-warning"></i>Atención personalizada</li>
+                <li><i class="far fa-check mr-3 text-warning"></i>Financiamiento</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="pt-md-5 py-md-5 pb-md-0">
+          <div class="container row mx-auto col-md-9">
+            <h3>¿Cómo es el proceso de contratación?</h3>
+            <div class="justify-content-center d-md-flex mt-5 px-md-3">
+              <div class="card card-m-none col-md p-4 rounded shadow-none"><img class="mr-auto d-block" src="image/icono-manos.svg" alt="" srcset=""/>
+                <h3 class="text-warning mt-4 mb-3"> Asesoramiento</h3>
+                <p>Analizamos junto a nuestros clientes las necesidades y requerimientos técnicos y alcance de cada proyecto para que puedan elegir el equipamiento correcto y tomar las mejores decisiones en cada caso.</p>
+              </div>
+              <div class="card card-m-none col-md p-4 rounded shadow-none mx-md-4 my-5 my-md-0"><img class="mr-auto d-block" src="image/icono-caja.svg" alt="" srcset=""/>
+                <h3 class="text-warning mt-4 mb-3"> Obtención</h3>
+                <p>Analizamos junto a nuestros clientes las necesidades y requerimientos técnicos y alcance de cada proyecto para que puedan elegir el equipamiento correcto y tomar las mejores decisiones en cada caso.</p>
+              </div>
+              <div class="card card-m-none col-md p-4 rounded shadow-none"><img class="mr-auto d-block" src="image/icono-mano-caja.svg" alt="" srcset=""/>
+                <h3 class="text-warning mt-4 mb-3"> Soporte</h3>
+                <p>Analizamos junto a nuestros clientes las necesidades y requerimientos técnicos y alcance de cada proyecto para que puedan elegir el equipamiento correcto y tomar las mejores decisiones en cada caso.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-white mt-5">
+          <div class="col-md-7 col-12 mt-container-home pt-md-4 pl-md-5">
+            <h3 class="ml-md-5 pl-3 my-4 py-5">Contacto</h3>
+            <form class="card card-m-on d-flex py-5 ml-md-5 mb-5" style="border-radius: 20px;">
+              <div class="px-md-5 col-md-12 d-md-flex">
+                <div class="md-form col-md-6">
+                  <input class="form-control" id="form1" type="text"/>
+                  <label for="form1" style="left:auto;">Nombre</label>
+                </div>
+                <div class="md-form col-md-6">
+                  <input class="form-control" id="form2" type="text"/>
+                  <label for="form2" style="left:auto;">Apellido</label>
+                </div>
+              </div>
+              <div class="px-md-5 col-md-12 d-md-flex">
+                <div class="md-form col-md-6">
+                  <input class="form-control" id="form3" type="text"/>
+                  <label for="form3" style="left:auto;">Email</label>
+                </div>
+                <select class="mdb-select md-form col-md-6">
+                  <option value="" disabled="" selected="">Motivo de consulta</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </div>
+              <div class="px-md-5 col-md-12 d-md-flex">
+                <div class="md-form col-md-12">
+                  <textarea class="md-textarea form-control" id="form7" rows="3"></textarea>
+                  <label for="form7" style="left:auto;">Consulta</label>
+                </div>
+              </div>
+              <div class="px-md-5 col-md-12">
+                <bottom class="btn btn-md btn-primary col-md-3 mt-md-5 col-6">Enviar                     </bottom>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </main>
+    <section class="mt-md-5 section-footer">
+      <div class="container position-absolute center-image-absolute pt-md-5 d-md-flex">
+        <div class="col-md-2 pt-5 pb-4 d-md-block d-flex"><img class="logo-footer" src="image/logo_wibla_footer.svg" alt="" srcset=""/>
+          <div class="mt-md-4 ml-auto d-block d-md-none"><a class="link-footer"><img class="icono-hover" src="image/facebook.png" data-name="facebook"/></a><a class="link-footer mx-3"><img class="icono-hover" src="image/linkedin.png" data-name="linkedin"/></a><a class="link-footer"><img class="icono-hover" src="image/instagram.png" data-name="instagram"/></a></div>
+        </div>
+        <div class="col-md-7 pt-md-5 row">
+          <div class="col-md-4 col-6">
+            <p class="text-white mb-2">Productos</p>
+            <div class="raya col-md-2 col-3 py-1-raya bg-white"></div>
+            <ul class="footer-list mt-md-4 mt-4">
+              <li><a href="#"><i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Cámara</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Lentes</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Proyectos</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-6">
+            <p class="text-white mb-2">Conocenos</p>
+            <div class="raya col-md-2 col-3 py-1-raya bg-white"></div>
+            <ul class="footer-list mt-md-4 mt-4">
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Nosotros</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Preguntas frecuentes</span></a></li>
+              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Contacto</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 d-md-block d-none">
+            <p class="text-white">Siguenos</p>
+            <div class="raya col-md-2 col-1 py-1-raya bg-white"></div>
+            <div class="mt-md-4"><a class="link-footer"><img class="icono-hover" src="image/facebook.png" data-name="facebook"/></a><a class="link-footer mx-md-3"><img class="icono-hover" src="image/linkedin.png" data-name="linkedin"/></a><a class="link-footer"><img class="icono-hover" src="image/instagram.png" data-name="instagram"/></a></div>
+          </div>
+        </div>
+        <div class="col-md-3 pt-md-5 pt-4">
+          <p class="text-white mb-2">Newsletter
+            <div class="raya col-md-2 col-1 py-1-raya bg-white"></div>
+            <div class="mt-md-4">
+              <div class="md-form md-outline footer-input-pl mt-4">
+                <input class="form-control text-white" id="form1" type="text"/>
+                <label for="form1">Example label</label>
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+      <embed class="d-md-block d-none" src="image/fondo-footer.svg" type=""/>
+      <embed class="d-md-none d-block" src="image/fondo-footer-m-1.svg" type="" style="width: 100%;"/>
+    </section>
+    <footer class="pt-0 bg-white">
+      <!-- Copyright-->
+      <div class="footer-copyright py-3 text-center">
+        <div class="row container mx-auto">
+          <div class="col-md-6 col-12 text-md-left text-center font12-px">2020 © Wibla. Todos los derechos reservados. </div>
+          <div class="col-md-6 col-12 text-md-right text-center font12-px"><a class="mr-3 text-primary font-weight-500" href="#"> 
+              <u>Terminos y Condiciones</u></a><a class="text-primary font-weight-500" href="#"> 
+              <u>Política de Privacidad </u></a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/multi-range.js"></script>
+    <script src="js/rating.js"></script>
+    <script>
+       $(document).ready(function() {
+           $('.scroll-count').scroll(function(){
+               let scroll = $(this).scrollLeft();
+               let suma = scroll/12*6;
+               $('.progress-bar').css('width',suma+'px');
+           });
+           
+           
+           $('.mdb-select').materialSelect();
+      });
+       
+    </script>
+    <script>
+      $(document).ready(function() {
+          AOS.init();
+          // SideNav Button Initialization
+          $(".button-collapse").sideNav({
+              edge: 'right', // Choose the horizontal origin
+              closeOnClick: false, // Closes side-nav on &lt;a&gt; clicks, useful for Angular/Meteor
+              breakpoint: 5440, // Breakpoint for button collapse
+              menuWidth: 240, // Width for sidenav
+              timeDurationOpen: 500, // Time duration open menu
+              timeDurationClose: 500, // Time duration open menu
+              timeDurationOverlayOpen: 200, // Time duration open overlay
+              timeDurationOverlayClose: 200, // Time duration close overlay
+              easingOpen: 'easeInOutQuad', // Open animation
+              easingClose: 'easeInOutQuad', // Close animation
+          });
+          $('.closed').on('click', function(){
+              $('#sidenav-overlay').click();
+          });
+      });
+      $(document).ready(function(){
+          $(".link-footer").hover(
+              function() {
+                  $(this).find('.icono-hover').attr("src",'image/'+$(this).find('.icono-hover').data('name')+'-h.png');
+              },
+              function() {
+                  $(this).find('.icono-hover').attr("src",'image/'+$(this).find('.icono-hover').data('name')+'.png');
+              },
+          );
+      });
+    </script>
+  </body>
+</html>

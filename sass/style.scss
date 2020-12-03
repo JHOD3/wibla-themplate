@@ -366,6 +366,9 @@ ul.content-caja-li li {
 .form-control.is-invalid, .was-validated .form-control:invalid {
     background-image: none !important; 
 }
+.card.rounded {
+    border-radius: 11px !important;
+}
 
 @media screen and (min-width: 1400px) {
 
@@ -380,6 +383,13 @@ ul.content-caja-li li {
 }
 
 @media screen and (max-width: 768px) {
+    .card-m-none{
+        background: transparent;
+    }
+    ..card-m-on{
+        background: white;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+    }
     .font35-px {
         font-size: 30px;
     }

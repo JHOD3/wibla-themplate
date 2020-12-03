@@ -1,0 +1,93 @@
+extends ../layouts/_layout
+block style
+    link(rel="stylesheet", href="css/multi-range.min.css")
+    link(rel="stylesheet", href="css/rating.min.css")
+block content
+    main(style="padding-top: 4.5rem;background: #F3F3F3; ")
+        section.bg-section-home
+            .container.position-absolute-md.absulute-center.py-section-home.d-md-flex.d-block.pt-5.px-md-5.position-absolute.center-image-absolute(style="z-index: 99;")
+                div.col-md-5.col-12.mt-container-home.mt-4
+                    div.pl-md-5
+                        h1.montserrat.text-md-left.text-white.font43-px Organismos Educactiovos
+                .col-md-7.col-12.mt-container-home.d-none.d-md-block
+            embed(src="image/header_2.svg", style="width:100%").mx-auto.d-md-block.d-none
+            embed(src="image/header_2-m.svg", style="width:100%").mx-auto.d-block.d-md-none
+        section.pt-md-5.py-5.pb-md-0
+            .container.pt-md-5.col-md-9.mx-auto.d-md-flex   
+                .col-md-7  
+                    p Ofrecemos un servicio integral de asesoría y venta de equipamiento a Instituciones educativas de nivel primario, secundario, terciario y universitario. Asegurando equipamiento tecnológico de punta en fotografía ,video, audio, computación y electrónica con beneficios especiales para el sector.
+                .col-md-5
+                    h3.ml-md-5 ¿Por qué Wibla?
+                    ul.content-caja-li.pl-md-5.pl-0
+                        li
+                            i.far.fa-check.mr-3.text-default
+                            |Asesoramiento Integral
+                        li
+                            i.far.fa-check.mr-3.text-default
+                            |Precios competitivos
+                        li
+                            i.far.fa-check.mr-3.text-default
+                            |Calidad y garantía asegurada
+                        li
+                            i.far.fa-check.mr-3.text-default
+                            |Atención personalizada
+                        li
+                            i.far.fa-check.mr-3.text-default
+                            |Financiamiento
+        section.pt-md-5.py-md-5.pb-md-0
+            .container.row.mx-auto.col-md-9
+                h3 ¿Cómo es el proceso de contratación?
+                div.justify-content-center.d-md-flex.mt-5.px-md-3
+                    .card.card-m-none.col-md.p-4.rounded.shadow-none
+                        img(src="image/icono-manos.svg", alt="", srcset="").mr-auto.d-block
+                        h3.text-default.mt-4.mb-3  Asesoramiento
+                        p Analizamos junto a nuestros clientes las necesidades y requerimientos técnicos y alcance de cada proyecto para que puedan elegir el equipamiento correcto y tomar las mejores decisiones en cada caso.
+                    .card.card-m-none.col-md.p-4.rounded.shadow-none.mx-md-4.my-5.my-md-0
+                        img(src="image/icono-caja.svg", alt="", srcset="").mr-auto.d-block
+                        h3.text-default.mt-4.mb-3  Obtención
+                        p Analizamos junto a nuestros clientes las necesidades y requerimientos técnicos y alcance de cada proyecto para que puedan elegir el equipamiento correcto y tomar las mejores decisiones en cada caso.
+                    .card.card-m-none.col-md.p-4.rounded.shadow-none
+                        img(src="image/icono-mano-caja.svg", alt="", srcset="").mr-auto.d-block
+                        h3.text-default.mt-4.mb-3  Soporte
+                        p Analizamos junto a nuestros clientes las necesidades y requerimientos técnicos y alcance de cada proyecto para que puedan elegir el equipamiento correcto y tomar las mejores decisiones en cada caso.
+        section.bg-white.mt-5
+            .col-md-7.col-12.mt-container-home.pt-md-4.pl-md-5
+                h3.ml-md-5.pl-3.my-4.py-5 Contacto
+                form.card.card-m-on.d-flex.py-5.ml-md-5.mb-5(style="border-radius: 20px;")
+                    .px-md-5.col-md-12.d-md-flex
+                        .md-form.col-md-6
+                            input#form1.form-control(type='text')
+                            label(for='form1', style="left:auto;") Nombre
+                        .md-form.col-md-6
+                            input#form2.form-control(type='text')
+                            label(for='form2', style="left:auto;") Apellido
+                    .px-md-5.col-md-12.d-md-flex
+                        .md-form.col-md-6
+                            input#form3.form-control(type='text')
+                            label(for='form3', style="left:auto;") Email
+                        select.mdb-select.md-form.col-md-6
+                            option(value='' disabled='' selected='') Motivo de consulta
+                            option(value='1') Option 1
+                            option(value='2') Option 2
+                            option(value='3') Option 3
+                    .px-md-5.col-md-12.d-md-flex
+                        .md-form.col-md-12
+                            textarea#form7.md-textarea.form-control(rows='3')
+                            label(for='form7', style="left:auto;") Consulta
+                    .px-md-5.col-md-12
+                        bottom.btn.btn-md.btn-primary.col-md-3.mt-md-5.col-6 Enviar                     
+block script
+    script(src="js/multi-range.js")
+    script(src="js/rating.js")
+    script.
+        $(document).ready(function() {
+            $('.scroll-count').scroll(function(){
+                let scroll = $(this).scrollLeft();
+                let suma = scroll/12*6;
+                $('.progress-bar').css('width',suma+'px');
+            });
+            
+            
+            $('.mdb-select').materialSelect();
+       });
+        
