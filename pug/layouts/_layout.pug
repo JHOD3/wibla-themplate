@@ -45,4 +45,18 @@ html(lang="es")
                         $(this).find('.icono-hover').attr("src",'image/'+$(this).find('.icono-hover').data('name')+'.png');
                     },
                 );
+                $( "#search" ).focus(function() {
+                    $( ".lupa-border-span" ).css('border-color','#e8427d');
+                })
+                .blur(function() {
+                    $('#search').removeClass('d-block').addClass('d-none');
+                    $( ".lupa-border-span" ).css('border-color','#d0d0d0');
+                    $('.lupa-border-span').removeClass('lupa-boder-span-hover').addClass('lupa-boder-span');
+                });
+                $( ".lupa-border-span" ).hover(function(){
+                    $(this).removeClass('lupa-boder-span').addClass('lupa-boder-span-hover');
+                    $('#search').removeClass('d-none').addClass('d-block');
+                    $( "#search" ).focus();
+                });
+
             });

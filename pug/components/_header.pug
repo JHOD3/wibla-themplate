@@ -8,29 +8,32 @@ nav.navbar.fixed-top.navbar-expand-lg.scrolling-navbar.double-nav.bg-white
                 a(href="" data-activates="slide-out").button-collapse
                     img(src="image/icono-bar.svg", alt="", srcset="" style="width: 40px;")
             ul.nav.navbar-nav.nav-flex-icons.d-md-flex.d-none
-                li.nav-item.dropdown.notifications-nav
-                    a#navbarDropdownMenuLink.nav-link.align-items-center.d-flex(data-toggle='dropdown' aria-haspopup='true' )
-                        span.d-none.d-md-inline-block Cámaras
-                        i.fas.fa-chevron-down
-                    .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
-                        .container
-                            .row
-                                .col-md-2
-                                .col-md-2.pl-4
-                                    a.dropdown-item.text-left(href='#')
-                                        |Cannon EOS R6 
-                                    a.dropdown-item.text-left(href='#')
-                                        |Cannon EOS R10 
-                                .col-md-2
-                                    a.dropdown-item.text-left(href='#')
-                                        |Cannon EOS R6 
-                                    a.dropdown-item.text-left(href='#')
-                                        |Cannon EOS R10 
+                //- li.nav-item.dropdown.notifications-nav
+                //-     a#navbarDropdownMenuLink.nav-link.align-items-center.d-flex(data-toggle='dropdown' aria-haspopup='true' )
+                //-         span.d-none.d-md-inline-block Cámaras
+                //-         i.fas.fa-chevron-down
+                //-     .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                //-         .container
+                //-             .row
+                //-                 .col-md-2
+                //-                 .col-md-2.pl-4
+                //-                     a.dropdown-item.text-left(href='product_list.html')
+                //-                         |Cannon EOS R6 
+                //-                     a.dropdown-item.text-left(href='product_list.html')
+                //-                         |Cannon EOS R10 
+                //-                 .col-md-2
+                //-                     a.dropdown-item.text-left(href='product_list.html')
+                //-                         |Cannon EOS R6 
+                //-                     a.dropdown-item.text-left(href='product_list.html')
+                //-                         |Cannon EOS R10 
                 li.nav-item
-                    a.nav-link(href='#')
+                    a.nav-link(href='#camaras')
+                        span.clearfix.d-none.d-sm-inline-block Camaras
+                li.nav-item
+                    a.nav-link(href='#lentes')
                         span.clearfix.d-none.d-sm-inline-block Lentes
                 li.nav-item
-                    a.nav-link(href='#')
+                    a.nav-link(href='#proyectores')
                         span.clearfix.d-none.d-sm-inline-block Proyectores
                 li.nav-item.dropdown.notifications-nav
                     a#navbarDropdownMenuLink.nav-link.align-items-center.d-flex(data-toggle='dropdown' aria-haspopup='true' )
@@ -41,12 +44,16 @@ nav.navbar.fixed-top.navbar-expand-lg.scrolling-navbar.double-nav.bg-white
                             .row
                                 .col-md-4
                                 .col-md-6(style="padding-left: 4.8rem;")
-                                    a.dropdown-item.text-left(href='#')
-                                        |Empresa 1
-                                    a.dropdown-item.text-left(href='#')
-                                        |Empresa 2
+                                    a.dropdown-item.text-left(href='gubernamentales.html')
+                                        |Organismos Gubernamentales
+                                    a.dropdown-item.text-left(href='educativos.html')
+                                        |Organismos Educativos
+                                    a.dropdown-item.text-left(href='empresariales.html')
+                                        |Organismos Empresariales
             ul.nav.navbar-nav.nav-flex-icons.ml-auto.align-items-center.d-md-flex.d-none
                 li.nav-item
-                    a.nav-link.text.nav-link-primary(href="#")
-                        span.clearfix.d-none.d-sm-inline-block.lupa-border
-                            i.fas.fa-search
+                    .input-group
+                        input#search.form-control.lupa-border(placeholder="Buscar...")
+                        .input-group-append#lupa-icon-content
+                            span.input-group-text.lupa-border-span
+                                i.fas.fa-search

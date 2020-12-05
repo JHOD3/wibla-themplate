@@ -318,18 +318,34 @@ li.nav-item.dropdown.notifications-nav.show {
   border: none;
 }
 
-.lupa-border {
-  border: 1px solid #1D1D1B;
+.content-input-lupa {
   border-radius: 20px;
-  padding: 6px;
+  border: 1px solid red;
+  outline: navajowhite;
 }
 
-.lupa-border:hover {
-  border: 1px solid #e8427d;
+.lupa-border {
+  border-radius: 20px 0px 0px 20px;
+  border-right: none;
+  display: none;
 }
 
-.lupa-border:hover i {
-  color: #e8427d;
+.lupa-border-span {
+  padding: 10px;
+  border-radius: 20px !important;
+}
+
+.lupa-boder-span-hover {
+  border-left: "none";
+  border-radius: 0 20px 20px 0 !important;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #e4417c;
+  outline: 0;
+  box-shadow: none;
 }
 
 .show .nav-link .fa-chevron-down:before {
@@ -444,9 +460,46 @@ ul.content-caja-li li {
   border-radius: 11px !important;
 }
 
+.input-group-text {
+  background-color: transparent;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #e8427d;
+  outline: 0;
+  box-shadow: none;
+}
+
+.content-product {
+  width: 69%;
+  padding: 1rem 0;
+  margin-top: 10px;
+}
+.content-product:hover {
+  background: white;
+  box-shadow: 0 0 13px 0px #c7c7c769;
+}
+
 @media screen and (max-width: 768px) {
+  .content-product {
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 10px;
+  }
+  .content-product:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+
   .card-m-none {
     background: transparent;
+  }
+
+  .card-m-on {
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
   }
 
   .font35-px {
@@ -611,5 +664,30 @@ ul.content-caja-li li {
 
   .footer-input-pl {
     padding: 0 6rem 0 0;
+  }
+
+  .img-product {
+    width: 245px !important;
+    height: 325px !important;
+    background: white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 3rem 0;
+  }
+
+  .font18-px {
+    font-size: 10px;
+  }
+
+  .font43-px {
+    font-size: 23px;
+  }
+
+  .font53-px {
+    font-size: 23px;
+  }
+
+  .mt-text-garantia {
+    margin-top: 85px;
   }
 }

@@ -23,9 +23,9 @@
           <li class="d-flex container pb-4">   <a class="pl-0 pl-3 pt-2" href="/"><img src="image/logo_wibla_header.svg" alt=""/></a><a class="closed button-collapse ml-auto p-3 pt-0" href=""><img src="image/icono-x.svg" alt="" srcset="" style="width: 30px;"/></a></li>
           <li>   
             <ul class="collapsible collapsible-accordion col-8 mx-auto mt-5">
-              <li> <a class="collapsible-header waves-effect" href="c_dai.html"><i class="fas fa-chevron-right"></i>Cotización DAI</a></li>
-              <li> <a class="collapsible-header waves-effect" href="c_btc.html"><i class="fas fa-chevron-right"> </i>Cotización BTC</a></li>
-              <li> <a class="collapsible-header waves-effect" href="blog"> <i class="fas fa-chevron-right"></i>Blog</a></li>
+              <li> <a class="collapsible-header waves-effect" href="'gubernamentales.html"><i class="fas fa-chevron-right"></i>Org. Gubernamentales</a></li>
+              <li> <a class="collapsible-header waves-effect" href="educativos.html"><i class="fas fa-chevron-right"> </i>Org. Educativos</a></li>
+              <li> <a class="collapsible-header waves-effect" href="empresariales.html"> <i class="fas fa-chevron-right"></i>Org. Empresariales</a></li>
               <li> 
                 <div class="md-form md-outline mt-4 ml-3 mt-5 input-with-post-icon"><i class="fas fa-search input-prefix text-muted" style="position: absolute;right: 6px;font-size: 23px;top: 9px;"></i>
                   <input class="form-control text-primary form-control-lg" id="form1" type="text"/>
@@ -43,32 +43,27 @@
           <div class="d-flex change-mode col-md-10 col-6 align-items-center" style="position: static;">
             <div class="d-flex d-md-none ml-auto"><a class="button-collapse" href="" data-activates="slide-out"><img src="image/icono-bar.svg" alt="" srcset="" style="width: 40px;"/></a></div>
             <ul class="nav navbar-nav nav-flex-icons d-md-flex d-none">
-              <li class="nav-item dropdown notifications-nav"><a class="nav-link align-items-center d-flex" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"><span class="d-none d-md-inline-block">Cámaras</span><i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-2"></div>
-                      <div class="col-md-2 pl-4"><a class="dropdown-item text-left" href="#">Cannon EOS R6 </a><a class="dropdown-item text-left" href="#">Cannon EOS R10 </a></div>
-                      <div class="col-md-2"><a class="dropdown-item text-left" href="#">Cannon EOS R6 </a><a class="dropdown-item text-left" href="#">Cannon EOS R10 </a></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#"><span class="clearfix d-none d-sm-inline-block">Lentes</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><span class="clearfix d-none d-sm-inline-block">Proyectores</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#camaras"><span class="clearfix d-none d-sm-inline-block">Camaras</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#lentes"><span class="clearfix d-none d-sm-inline-block">Lentes</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#proyectores"><span class="clearfix d-none d-sm-inline-block">Proyectores</span></a></li>
               <li class="nav-item dropdown notifications-nav"><a class="nav-link align-items-center d-flex" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"><span class="d-none d-md-inline-block">Empresas</span><i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <div class="container">
                     <div class="row">
                       <div class="col-md-4"></div>
-                      <div class="col-md-6" style="padding-left: 4.8rem;"><a class="dropdown-item text-left" href="#">Empresa 1</a><a class="dropdown-item text-left" href="#">Empresa 2</a></div>
+                      <div class="col-md-6" style="padding-left: 4.8rem;"><a class="dropdown-item text-left" href="gubernamentales.html">Organismos Gubernamentales</a><a class="dropdown-item text-left" href="educativos.html">Organismos Educativos</a><a class="dropdown-item text-left" href="empresariales.html">Organismos Empresariales</a></div>
                     </div>
                   </div>
                 </div>
               </li>
             </ul>
             <ul class="nav navbar-nav nav-flex-icons ml-auto align-items-center d-md-flex d-none">
-              <li class="nav-item"><a class="nav-link text nav-link-primary" href="#"><span class="clearfix d-none d-sm-inline-block lupa-border"><i class="fas fa-search"></i></span></a></li>
+              <li class="nav-item">
+                <div class="input-group">
+                  <input class="form-control lupa-border" id="search" placeholder="Buscar..."/>
+                  <div class="input-group-append" id="lupa-icon-content"><span class="input-group-text lupa-border-span"><i class="fas fa-search"></i></span></div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -243,18 +238,18 @@
             <p class="text-white mb-2">Productos</p>
             <div class="raya col-md-2 col-3 py-1-raya bg-white"></div>
             <ul class="footer-list mt-md-4 mt-4">
-              <li><a href="#"><i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Cámara</span></a></li>
-              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Lentes</span></a></li>
-              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Proyectos</span></a></li>
+              <li><a href="#camaras"><i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Cámara</span></a></li>
+              <li><a href="#lentes"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Lentes</span></a></li>
+              <li><a href="#proyectores"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Proyectos</span></a></li>
             </ul>
           </div>
           <div class="col-md-4 col-6">
             <p class="text-white mb-2">Conocenos</p>
             <div class="raya col-md-2 col-3 py-1-raya bg-white"></div>
             <ul class="footer-list mt-md-4 mt-4">
-              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Nosotros</span></a></li>
-              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Preguntas frecuentes</span></a></li>
-              <li><a href="#"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Contacto</span></a></li>
+              <li><a href="quienes_somos.html"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Nosotros</span></a></li>
+              <li><a href="faqs.html"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Preguntas frecuentes</span></a></li>
+              <li><a href="contact.html"> <i class="fas fa-chevron-right font10-px mr-md-2"> </i><span>Contacto</span></a></li>
             </ul>
           </div>
           <div class="col-md-4 d-md-block d-none">
@@ -377,6 +372,20 @@
                   $(this).find('.icono-hover').attr("src",'image/'+$(this).find('.icono-hover').data('name')+'.png');
               },
           );
+          $( "#search" ).focus(function() {
+              $( ".lupa-border-span" ).css('border-color','#e8427d');
+          })
+          .blur(function() {
+              $('#search').removeClass('d-block').addClass('d-none');
+              $( ".lupa-border-span" ).css('border-color','#d0d0d0');
+              $('.lupa-border-span').removeClass('lupa-boder-span-hover').addClass('lupa-boder-span');
+          });
+          $( ".lupa-border-span" ).hover(function(){
+              $(this).removeClass('lupa-boder-span').addClass('lupa-boder-span-hover');
+              $('#search').removeClass('d-none').addClass('d-block');
+              $( "#search" ).focus();
+          });
+      
       });
     </script>
   </body>
